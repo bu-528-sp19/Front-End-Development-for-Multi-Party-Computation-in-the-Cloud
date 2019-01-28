@@ -54,3 +54,8 @@ This section discusses the minimum acceptance criteria at the end of the project
 
 Release planning section describes how the project will deliver incremental sets of features and functions in a series of releases to completion. Identification of user stories associated with iterations that will ease/guide sprint planning sessions is encouraged. Higher level details for the first iteration is expected.
 
+## Contact us
+
+Qingxing Li lqx1996@bu.edu
+Yicun Hou yicunhou@bu.edu
+Haoyu Xu xhy@bu.edu
