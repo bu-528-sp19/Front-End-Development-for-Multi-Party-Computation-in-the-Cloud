@@ -1,6 +1,6 @@
 # Front-End-Development-for-Multi-Party-Computation-in-the-Cloud
 
-## Project Description Template
+## Project Description
 
 The purpose of this Project Description is to present the ideas proposed and decisions made during the preliminary envisioning and inception phase of the project. The goal is to analyze an initial concept proposal at a strategic level of detail and attain/compose an agreement between the project team members and the project customer (mentors and instructors) on the desired solution and overall project direction.
 
