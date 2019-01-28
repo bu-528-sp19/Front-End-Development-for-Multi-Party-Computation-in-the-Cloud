@@ -50,7 +50,7 @@ This section discusses the implications and reasons of the design decisions made
 
 This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
 
-## 6.  Release Planning:
+## 6. Release Planning:
 
 Release planning section describes how the project will deliver incremental sets of features and functions in a series of releases to completion. Identification of user stories associated with iterations that will ease/guide sprint planning sessions is encouraged. Higher level details for the first iteration is expected.
 
