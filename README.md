@@ -22,6 +22,10 @@ The vision section describes the final desired state of the project once the pro
 
 ## 2. Users/Personas Of The Project:
 
+It targets with reseachers who are condition-focused and people background in various fields of medcine to implement this software.
+It does not target at:
+Doctors who are patient-focused.
+People who treat it as technical, there is no need to have the background for software.
 This section describes the principal user roles of the project together with the key characteristics of these roles. This information will inform the design and the user scenarios. A complete set of roles helps in ensuring that high-level requirements can be identified in the product backlog.
 
 ** **
