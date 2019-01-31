@@ -1,0 +1,24 @@
+1) Set up basic react scaffolding using create-react-app
+2) Set up chris store ui
+3) Look at replacing undux with redux in chris store ui
+
+
+
+Maybe 1.5 running through react/redux tutorial
+
+Core work item is setting up redux for the ChRIS UI. Bonus for end of semester is slick visualization of brain volume results.
+
+Sprint 1 - weeks 1-2: familiarity with project technology / platform
+
+Sprint 2 - weeks 3 & 4 - start redux implementation in store - fetch all data objects into the cache s
+
+redux - central data store that makes data available to all components, so individual components aren't making network calls and causing performance issues
+
+Sprint 3 - weeks 5 & 6 - start implementing redux for the ChRIS UI. take all backend objects and populate them into the cache so they are available, but not necessarily implement use cases
+
+https://github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design
+
+Sprint 4 - weeks 7 & 8 - ensuring redux is working properly and creating some unit tests to verify
+
+last sprint or two: building new front end components for visualization of brain volume callculation from multiple party compute
+
