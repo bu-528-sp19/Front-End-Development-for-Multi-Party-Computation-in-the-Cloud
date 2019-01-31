@@ -10,15 +10,40 @@ Core work item is setting up redux for the ChRIS UI. Bonus for end of semester i
 
 Sprint 1 - weeks 1-2: familiarity with project technology / platform
 
-Sprint 2 - weeks 3 & 4 - start redux implementation in store - fetch all data objects into the cache s
+Sprint 2 - weeks 3 & 4 - start redux implementation in store - fetch all data objects into the caches
 
-redux - central data store that makes data available to all components, so individual components aren't making network calls and causing performance issues
+redux - central data store that makes data available to all components,
+so individual components aren't making network calls and causing performance issues
 
-Sprint 3 - weeks 5 & 6 - start implementing redux for the ChRIS UI. take all backend objects and populate them into the cache so they are available, but not necessarily implement use cases
+Sprint 3 - weeks 5 & 6 - start implementing redux for the ChRIS UI. 
+take all backend objects and populate them into the cache so they are available, 
+but not necessarily implement use cases
 
 https://github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design
 
 Sprint 4 - weeks 7 & 8 - ensuring redux is working properly and creating some unit tests to verify
 
 last sprint or two: building new front end components for visualization of brain volume callculation from multiple party compute
+
+
+
+VISION AND GOAL:
+1. Set up react scaffolding using creawte-react-app
+2. (Crucial work!)Set up Chris store ui by using redux to replace undux
+3. Build new front end component for visulization of brain volum callculation from multiple-party compute
+
+Tech：
+1.React
+2.Patternfly3.5 or 4
+3.Redux(based on React)
+
+
+Plan:(temporary plan, modified depending on the progress...)
+
+sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about
+the Chris platform and Chris UI project of redhat.
+sprint2(weeks 3&4): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
+sprint3(weeks 5&6): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
+sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
+sprint5(from week9): building new front end component for visulization of brain volume calculation.
 
