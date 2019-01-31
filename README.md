@@ -43,11 +43,15 @@ This section discusses the minimum acceptance criteria at the end of the project
 ## 5. Release Planning:
 (temporary plan, modified depending on the progress...)
 
-- sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
-- sprint2(weeks 3&4): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
-- sprint3(weeks 5&6): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
-- sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
-- sprint5(from week9): building new front end component for visulization of brain volume calculation.
+- Sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
+
+- Sprint2(weeks 3&4): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
+
+- Sprint3(weeks 5&6): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
+
+- Sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
+
+- Sprint5(from week9): building new front end component for visulization of brain volume calculation.
 
 ## 6. Division of Work:
 to be decided
@@ -58,11 +62,11 @@ to be decided
 
 ## Contact us
 
-Qingxing Li lqx1996@bu.edu
-Yicun Hou yicunhou@bu.edu
-Haoyu Xu xhy@bu.edu
+- Qingxing Li lqx1996@bu.edu
+- Yicun Hou yicunhou@bu.edu
+- Haoyu Xu xhy@bu.edu
 
 ## Reference
-“Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
+- “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
 
-Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+- Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
