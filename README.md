@@ -60,9 +60,9 @@ This section discusses the minimum acceptance criteria at the end of the project
 ## 6. Division of Work:
 to be decided
 
-Qingxing Li:
-Yicun Hou:
-Haoyu Xu:
+- Qingxing Li:
+- Yicun Hou:
+- Haoyu Xu:
 
 ## Contact us
 
