@@ -2,31 +2,23 @@
 
 ## Project Description
 
-The purpose of this Project Description is to present the ideas proposed and decisions made during the preliminary envisioning and inception phase of the project. The goal is to analyze an initial concept proposal at a strategic level of detail and attain/compose an agreement between the project team members and the project customer (mentors and instructors) on the desired solution and overall project direction.
+The ChRIS(Children's Research Integration System) is an open source framework for madical image processing, it enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities. The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
 
-This template proposal contains a number of sections, which you can edit/modify/add/delete/organize as you like.  Some key sections we’d like to have in the proposal are:
+The project is based on the previous backend API and image processing function, rewriting and optimizing the frontend UI and framework by using redux to improve the users' experience.
 
-- Vision: An executive summary of the vision, goals, users, and general scope of the intended project.
-
-- Solution Concept: the approach the project team will take to meet the business needs. This section also provides an overview of the architectural and technical designs made for implementing the project.
-
-- Scope: the boundary of the solution defined by itemizing the intended features and functions in detail, determining what is out of scope, a release strategy and possibly the criteria by which the solution will be accepted by users and operations.
-
-Project Proposal can be used during the follow-up analysis and design meetings to give context to efforts of more detailed technical specifications and plans. It provides a clear direction for the project team; outlines project goals, priorities, and constraints; and sets expectations.
 
 ** **
 
-## 1.   Vision and Goals Of The Project:
+## 1. Vision and Goals Of The Project:
 
 1. Set up react scaffolding using creawte-react-app
 2. (Crucial work!)Set up Chris store ui by using redux to replace undux
 3. Build new front end component for visulization of brain volum callculation from multiple-party compute
-
-
+4. Privilege management and data access
 
 ** **
 
-## 2.   Scope and Features Of The Project:
+## 2. Scope and Features Of The Project:
 
 The Scope places a boundary around the solution by detailing the range of features and functions of the project. This section helps to clarify the solution scope and can explicitly state what will not be delivered as well.
 
@@ -69,3 +61,8 @@ to be decided
 Qingxing Li lqx1996@bu.edu
 Yicun Hou yicunhou@bu.edu
 Haoyu Xu xhy@bu.edu
+
+## Reference
+“Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
+
+Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
