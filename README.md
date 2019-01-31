@@ -7,8 +7,6 @@ The ChRIS(Children's Research Integration System) is an open source framework fo
 The project is based on the previous backend API and image processing function, rewriting and optimizing the frontend UI and framework by using redux to improve the users' experience.
 
 
-** **
-
 ## 1. Vision and Goals Of The Project:
 
 1. Set up react scaffolding using creawte-react-app
@@ -22,7 +20,6 @@ The project is based on the previous backend API and image processing function, 
 
 The Scope places a boundary around the solution by detailing the range of features and functions of the project. This section helps to clarify the solution scope and can explicitly state what will not be delivered as well.
 
-** **
 
 ## 3. Solution Concept
 
@@ -62,13 +59,13 @@ to be decided
 
 ** **
 
+#### Reference
+- “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
+
+- Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+
 #### Contact us
 
 - Qingxing Li lqx1996@bu.edu
 - Yicun Hou yicunhou@bu.edu
 - Haoyu Xu xhy@bu.edu
-
-#### Reference
-- “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
-
-- Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
