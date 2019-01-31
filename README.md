@@ -60,13 +60,13 @@ to be decided
 - Yicun Hou:
 - Haoyu Xu:
 
-## Contact us
+### Contact us
 
 - Qingxing Li lqx1996@bu.edu
 - Yicun Hou yicunhou@bu.edu
 - Haoyu Xu xhy@bu.edu
 
-## Reference
+### Reference
 - “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
 
 - Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
