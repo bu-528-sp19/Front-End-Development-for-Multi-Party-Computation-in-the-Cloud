@@ -14,7 +14,6 @@ The project is based on the previous backend API and image processing function, 
 3. Build new front end component for visulization of brain volum callculation from multiple-party compute
 4. Privilege management and data access
 
-** **
 
 ## 2. Scope and Features Of The Project:
 
