@@ -56,15 +56,13 @@ This section discusses the implications and reasons of the design decisions made
 This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
 
 ## 6. Release Planning:
-Plan:(temporary plan, modified depending on the progress...)
+(temporary plan, modified depending on the progress...)
 
-sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about
-the Chris platform and Chris UI project of redhat.
-sprint2(weeks 3&4): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
-sprint3(weeks 5&6): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
-sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
-
-sprint5(from week9): building new front end component for visulization of brain volume calculation.
+- sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
+- sprint2(weeks 3&4): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
+- sprint3(weeks 5&6): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
+- sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
+- sprint5(from week9): building new front end component for visulization of brain volume calculation.
 
 
 ## Contact us
