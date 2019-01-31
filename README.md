@@ -23,23 +23,16 @@ Project Proposal can be used during the follow-up analysis and design meetings t
 3. Build new front end component for visulization of brain volum callculation from multiple-party compute
 
 
-## 2. Users/Personas Of The Project:
-
-It targets with reseachers who are condition-focused and people background in various fields of medcine to implement this software.
-It does not target at:
-Doctors who are patient-focused.
-People who treat it as technical, there is no need to have the background for software.
-This section describes the principal user roles of the project together with the key characteristics of these roles. This information will inform the design and the user scenarios. A complete set of roles helps in ensuring that high-level requirements can be identified in the product backlog.
 
 ** **
 
-## 3.   Scope and Features Of The Project:
+## 2.   Scope and Features Of The Project:
 
 The Scope places a boundary around the solution by detailing the range of features and functions of the project. This section helps to clarify the solution scope and can explicitly state what will not be delivered as well.
 
 ** **
 
-## 4. Solution Concept
+## 3. Solution Concept
 
 This section provides a high-level outline of the solution.
 
@@ -51,11 +44,11 @@ Design Implications and Discussion:
 
 This section discusses the implications and reasons of the design decisions made during the global architecture design.
 
-## 5. Acceptance criteria
+## 4. Acceptance criteria(MVP)
 
 This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
 
-## 6. Release Planning:
+## 5. Release Planning:
 (temporary plan, modified depending on the progress...)
 
 - sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
@@ -64,6 +57,12 @@ This section discusses the minimum acceptance criteria at the end of the project
 - sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
 - sprint5(from week9): building new front end component for visulization of brain volume calculation.
 
+## 6. Division of Work:
+to be decided
+
+Qingxing Li:
+Yicun Hou:
+Haoyu Xu:
 
 ## Contact us
 
