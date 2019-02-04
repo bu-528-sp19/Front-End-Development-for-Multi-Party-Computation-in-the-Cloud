@@ -23,17 +23,17 @@ It targets at researchers who want to innovate new techniques or potential treat
 
 ## 3. Solution Concept
 
-This section provides a high-level outline of the solution.
+* Global Architectural Structure Of the Project:
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
 
-Global Architectural Structure Of the Project:
+* A brief flow diagram to show how the front-end works:
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 
-This section provides a high-level architecture or a conceptual diagram showing the scope of the solution. If wireframes or visuals have already been done, this section could also be used to show how the intended solution will look. This section also provides a walkthrough explanation of the architectural structure.
+* This section provides a high-level architecture or a conceptual diagram showing the scope of the solution. If wireframes or visuals have already been done, this section could also be used to show how the intended solution will look. This section also provides a walkthrough explanation of the architectural structure.
 
 Design Implications and Discussion:
 
 This section discusses the implications and reasons of the design decisions made during the global architecture design.
-
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
 
 ## 4. Acceptance criteria(MVP)
 Design an efficient front-end interface to interact between users and cloud server.
