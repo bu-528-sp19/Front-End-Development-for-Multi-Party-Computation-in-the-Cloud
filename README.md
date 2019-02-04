@@ -64,7 +64,9 @@ to be decided
 
 #### Reference
 - “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
-
+- Backend for [ChRIS Store](https://github.com/FNNDSC/ChRIS_store)
+- [ChRIS REST API design](https://github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design)
+- [Undux official website](https://undux.org/)
 - Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 #### Contact us
