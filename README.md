@@ -4,13 +4,13 @@
 
 The ChRIS(Children's Research Integration System) is an open source framework for madical image processing, it enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities. The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
 
-The project is based on the previous backend API and the core function is image processing function, we want to rewrite and optimize the frontend UI and framework by using React and Redux to improve the users' experience.
+The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/) and the core function is image processing function, we want to rewrite and optimize the frontend UI and framework by using [React](https://github.com/facebook/react) and [Redux]((https://github.com/reduxjs/redux)) to improve the user experience.
 
 
 ## 1. Vision and Goals
 
-* Set up react scaffolding using create-react-app(https://github.com/facebook/create-react-app) and get familiar with redux
-* (Crucial work!)Set up ChRIS store and UI by using redux and then look at replacing undux with redux in chris store UI, which is a light version of redux
+* Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux
+* (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux
 * Build new front end component for visulization of brain volum callculation from multiple-party computation
 * Privilege management and data access, design different data pipelines using ChRIS RESTful APIS
 
