@@ -17,8 +17,6 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 
 ## 2. Scope and Features
 
-The Scope places a boundary around the solution by detailing the range of features and functions of the project. This section helps to clarify the solution scope and can explicitly state what will not be delivered as well.
-
 It targets at researchers who want to innovate new techniques or potential treatments for patients, clinicians who want to achieve medical data from different hospital
 * Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
 * Extensibility: Provides an extendable interface that allows third-party service plugin
