@@ -9,10 +9,10 @@ The project is based on the previous backend API and image processing function, 
 
 ## 1. Vision and Goals
 
-1. Set up react scaffolding using create-react-app and get familiar with redux
-2. (Crucial work!)Set up ChRIS store and UI by using redux and then try to replace redux with undux, which is a light version of redux
-3. Build new front end component for visulization of brain volum callculation from multiple-party computation
-4. Privilege management and data access, design different data pipelines
+* Set up react scaffolding using create-react-app and get familiar with redux
+* (Crucial work!)Set up ChRIS store and UI by using redux and then try to replace redux with undux, which is a light version of redux
+* Build new front end component for visulization of brain volum callculation from multiple-party computation
+* Privilege management and data access, design different data pipelines
 
 
 ## 2. Scope and Features
