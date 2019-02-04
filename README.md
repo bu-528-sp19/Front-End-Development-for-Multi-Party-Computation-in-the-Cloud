@@ -9,15 +9,16 @@ The project is based on the previous backend API and image processing function, 
 
 ## 1. Vision and Goals
 
-1. Set up react scaffolding using creawte-react-app
-2. (Crucial work!)Set up Chris store ui by using redux to replace undux
-3. Build new front end component for visulization of brain volum callculation from multiple-party compute
-4. Privilege management and data access
+1. Set up react scaffolding using create-react-app and get familiar with redux
+2. (Crucial work!)Set up ChRIS store and UI by using redux and then try to replace redux with undux, which is a light version of redux
+3. Build new front end component for visulization of brain volum callculation from multiple-party computation
+4. Privilege management and data access, design different data pipelines
 
 
 ## 2. Scope and Features
 
 The Scope places a boundary around the solution by detailing the range of features and functions of the project. This section helps to clarify the solution scope and can explicitly state what will not be delivered as well.
+Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
 
 
 ## 3. Solution Concept
@@ -39,7 +40,7 @@ This section discusses the implications and reasons of the design decisions made
 This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
 
 ## 5. Release Planning
-(temporary plan, modified depending on the progress...)
+(This is just a temporary plan, will be modified depending on the progress...)
 
 - Sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
 
