@@ -38,8 +38,7 @@ This section discusses the implications and reasons of the design decisions made
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
 
 ## 4. Acceptance criteria(MVP)
-
-This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
+Design an efficient front-end interface to interact between users and cloud server.
 
 ## 5. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
@@ -67,8 +66,8 @@ to be decided
 - “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
 - Backend for [ChRIS Store](https://github.com/FNNDSC/ChRIS_store)
 - [ChRIS REST API design](https://github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design)
-- [Undux official website](https://undux.org/)
 - Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+- [Undux official website](https://undux.org/)
 
 #### Contact us
 
