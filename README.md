@@ -22,13 +22,17 @@ Basically, the scope of project targets at medical/neuroscience researchers focu
 
 ## 3. Solution Concept
 
-* Global Architectural Structure Of the Project:
+### Global Architectural Structure Of the Project:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
+Some concepts about the project in the diagram:
+* Plugin: A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin input and output.
+* Pipeline: A pipeline is a template that can be used to process data.
+* Feed: A feed is a specific run of a pipeline.
 
-* A brief flow diagram to show how the front-end works:
+### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 
-* This section provides a high-level architecture or a conceptual diagram showing the scope of the solution. If wireframes or visuals have already been done, this section could also be used to show how the intended solution will look. This section also provides a walkthrough explanation of the architectural structure.
+This section provides a high-level architecture or a conceptual diagram showing the scope of the solution. If wireframes or visuals have already been done, this section could also be used to show how the intended solution will look. This section also provides a walkthrough explanation of the architectural structure.
 
 Design Implications and Discussion:
 
