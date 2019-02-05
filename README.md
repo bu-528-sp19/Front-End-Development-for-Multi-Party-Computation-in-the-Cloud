@@ -46,13 +46,13 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 ## 5. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
 
-- Sprint1(weeks 1&2): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
+- Sprint1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
 
-- Sprint2(weeks 3&4): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
+- Sprint2(weeks 4&5): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
 
-- Sprint3(weeks 5&6): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
+- Sprint3(weeks 6&7): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
 
-- Sprint4(weeks 7&8): creating some unit for testing and ensuring redux can work correctly 
+- Sprint4(weeks 8&9): creating some unit for testing and ensuring redux can work correctly 
 
 - Sprint5(from week9): building new front end component for visulization of brain volume calculation.
 
