@@ -24,10 +24,11 @@ Basically, the scope of project targets at medical/neuroscience researchers focu
 
 ### Global Architectural Structure Of the Project:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
+
 Some concepts about the project in the diagram:
-* Plugin: A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin input and output.
-* Pipeline: A pipeline is a template that can be used to process data.
-* Feed: A feed is a specific run of a pipeline.
+- Plugin: A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin input and output.
+- Pipeline: A pipeline is a template that can be used to process data.
+- Feed: A feed is a specific run of a pipeline.
 
 ### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
