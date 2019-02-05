@@ -16,7 +16,8 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 
 
 ## 2. Scope and Features
-Basically, the scope of project targets at medical/neuroscience researchers focusing on analysis of brain imagery, specifically for the demo we're working on its researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.
+Basically, the scope of project targets at medical/neuroscience researchers focusing on analysis of brain imagery, specifically for the demo we're working on its researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
+What will not covered is that 
 Features of the project:
 
 * Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
@@ -29,7 +30,7 @@ Features of the project:
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ### Some concepts about the project in the diagram:
-- **Plugin:** A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin input and output.
+- **Plugin:** A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin inclueds input and output.
 - **Pipeline:** A pipeline is a template that can be used to process data.
 - **Feed:** A feed is a specific run of a pipeline.
 - **Data:** Data is the actual data that feeds operate on / manipulate.
