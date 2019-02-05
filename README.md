@@ -29,6 +29,8 @@ Some concepts about the project in the diagram:
 - Plugin: A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin input and output.
 - Pipeline: A pipeline is a template that can be used to process data.
 - Feed: A feed is a specific run of a pipeline.
+- Data: Data is the actual data that feeds operate on / manipulate.
+- Project: A composition of feeds and maybe ACLs and metadata (notes, chats, labels, etc.) for collaboration.
 
 ### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
