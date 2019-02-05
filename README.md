@@ -11,13 +11,13 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 
 * Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux
 * (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux
-* Build new front end component for visulization of brain volum callculation from multiple-party computation
+* Build new front end component for visulization of brain volume calculation from multiple-party computation
 * Privilege management and data access, design different data pipelines using ChRIS RESTful APIS
 
 
 ## 2. Scope and Features
-Basically, the scope of project targets at medical/neuroscience researchers focusing on analysis of brain imagery, specifically for the demo we're working on its researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
-What will not covered are doctors treating specific patients who are patient-focused.  
+Basically, the scope of project targets at medical/neuroscience researchers focusing on the analysis of brain imagery, specifically for the demo we're working on its researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
+What will not be covered are doctors treating specific patients who are patient-focused.  
 Features of the project:
 * Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
 * Extensibility: Provides an extendable interface that allows third-party service plugin
@@ -29,7 +29,7 @@ Features of the project:
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ### Some concepts about the project in the diagram:
-- **Plugin:** A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin inclueds input and output.
+- **Plugin:** A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin includes input and output.
 - **Pipeline:** A pipeline is a template that can be used to process data.
 - **Feed:** A feed is a specific run of a pipeline.
 - **Data:** Data is the actual data that feeds operate on / manipulate.
@@ -46,15 +46,15 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 ## 5. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
 
-- Sprint1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understand about the Chris platform and Chris UI project of redhat.
+- Sprint1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding about the ChRIS platform and ChRIS UI project of redhat.
 
-- Sprint2(weeks 4&5): start the redux implementation in Chris Store, rewrite the frame by using Redux and fetch all the data object into the caches.
+- Sprint2(weeks 4&5): start the redux implementation in ChRIS Store, rewrite the frame by using Redux and fetch all the data object into the caches.
 
-- Sprint3(weeks 6&7): start implementing redux for the Chris UI, take all backend objexts and populate them into the cache and make them available.
+- Sprint3(weeks 6&7): start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
 - Sprint4(weeks 8&9): creating some unit for testing and ensuring redux can work correctly 
 
-- Sprint5(from week9): building new front end component for visulization of brain volume calculation.
+- Sprint5(from week9): building new front end component for visualization of brain volume calculation.
 
 ## 6. Division of Work
 to be decided
