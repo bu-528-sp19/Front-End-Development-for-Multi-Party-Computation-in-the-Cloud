@@ -28,7 +28,7 @@ Features of the project:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
-Some concepts about the project in the diagram:
+### Some concepts about the project in the diagram:
 - **Plugin:** A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin input and output.
 - **Pipeline:** A pipeline is a template that can be used to process data.
 - **Feed:** A feed is a specific run of a pipeline.
