@@ -16,8 +16,7 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 
 
 ## 2. Scope and Features
-
-It targets at researchers who want to innovate new techniques or potential treatments for patients, clinicians who want to achieve medical data from different hospital
+Basically, the scope of project targets at medical/neuroscience researchers focusing on analysis of brain imagery, specifically for the demo we're working on its researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.
 * Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
 * Extensibility: Provides an extendable interface that allows third-party service plugin
 
