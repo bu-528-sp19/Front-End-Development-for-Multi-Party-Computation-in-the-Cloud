@@ -2,21 +2,23 @@
 
 ## Project Description
 
-ChRIS is an open source framework that utilizes cloud technologies to democratize medical analytics application development and enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities.  The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
+The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS. ChRIS is an open source framework that utilizes cloud technologies to democratize medical analytics application development and enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities.  The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
 
-The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/) and the core function is image processing function, we want to rewrite and optimize the frontend UI and framework by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux) to improve the user experience.
+The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux).
 
 
 ## 1. Vision and Goals
 
 * Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux
 * (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux
-* Build new front end component for visulization of brain volume calculation from multiple-party computation
-* Privilege management and data access, design different data pipelines using ChRIS RESTful APIS
+* Get the data from the multi-party compute and create a component that diplays the output from the MPC API so that there is something pleasant the user can view from the results of the algorithm
 
 
 ## 2. Scope and Features
-Basically, the scope of project targets at medical/neuroscience researchers focusing on the analysis of brain imagery, specifically for the demo we're working on its researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
+Basically, the scope of project or in other word the users of service targets at:  
+* Medical/neuroscience researchers focusing on the analysis of brain imagery.  
+Specifically targets at:  
+* researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
 What will not be covered are doctors treating specific patients who are patient-focused.  
 Features of the project:
 * Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
