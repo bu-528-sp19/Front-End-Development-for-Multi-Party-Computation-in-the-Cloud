@@ -59,8 +59,8 @@ Key design decisions and motivation behind them:
 
 | Tables        | Redux         | Undux |
 |:-------------:|-------------|-----|
-| Speed      | Globs of boilerplate which slows down engineering | $1600 |
-| Trace the code | centered      |   $12 |
+| Speed      | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
+| Trace the code | Actions, creators, types, reducers, callers spread all across lots of files      |   Do every thing right in your view |
 | zebra stripes | are neat      |    $1 |
 
 ### A brief flow diagram to show how the front-end works:
