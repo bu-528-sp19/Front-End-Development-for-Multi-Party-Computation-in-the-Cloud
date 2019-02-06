@@ -53,10 +53,10 @@ Key design decisions and motivation behind them:
 - Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance.
 - Look at replacing undux with redux: 
 
-| __Animals__ | __Sports__ | __Fruits__ |
+|             |  __Redux__ |  __Undux__ |
 |-------------|------------|------------|
-| Cat         | Soccer     | Apple      |
-| Dog         | Basketball | Orange     |
+| Speed       | Soccer     | Apple      |
+| Trace the code   | Basketball | Orange     |
 
 
 
