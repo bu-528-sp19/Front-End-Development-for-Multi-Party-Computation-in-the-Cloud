@@ -12,7 +12,6 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 * Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
 * (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
 * Get the data from the multi-party compute and create a component that diplays the output from the MPC API so that there is something pleasant the user can view from the results of the algorithm.(But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
-* Potential stretch goals: visualization of brain volume results.
 
 ## 2. Scope and Features
 Basically, the scope of project or in other word the users of service targets at:  
@@ -50,19 +49,20 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 - **Project:** A composition of feeds and maybe ACLs and metadata (notes, chats, labels, etc.) for collaboration.
 
 ### Design Implications and Discussion
+Key design decisions and motivation behind them:  
+Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance
 
 
 ### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
-### Details about improving performance about data 
-One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end.  
-So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance. 
-
-## 4. Acceptance criteria(MVP)
+## 4. Acceptance criteria
+Minimum acceptance criteria is:
 - Design an efficient front-end interface to interact between users and cloud server.
 - Understand the multiparty computation structure, optimize the front end to help users search data faster
+Potential stretch goals are:  
+- visualization of brain volume results.
 
 ## 5. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
