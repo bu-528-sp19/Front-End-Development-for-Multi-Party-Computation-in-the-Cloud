@@ -17,6 +17,7 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 ## 2. Scope and Features
 Basically, the scope of project or in other word the users of service targets at:  
 * Medical/neuroscience researchers focusing on the analysis of brain imagery.  
+
 Specifically targets at:  
 * researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
 What will not be covered are doctors treating specific patients who are patient-focused.  
