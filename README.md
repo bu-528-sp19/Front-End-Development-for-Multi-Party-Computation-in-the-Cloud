@@ -49,6 +49,9 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 - **Data:** Data is the actual data that feeds operate on / manipulate.
 - **Project:** A composition of feeds and maybe ACLs and metadata (notes, chats, labels, etc.) for collaboration.
 
+### Design Implications and Discussion
+
+
 ### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
@@ -56,9 +59,6 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 ### Details about improving performance about data 
 One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end.  
 So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance. 
-
-### Redux versu Undux
-
 
 ## 4. Acceptance criteria(MVP)
 - Design an efficient front-end interface to interact between users and cloud server.
