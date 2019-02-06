@@ -9,10 +9,10 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 
 ## 1. Vision and Goals
 
-* Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux
-* (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux
-* Get the data from the multi-party compute and create a component that diplays the output from the MPC API so that there is something pleasant the user can view from the results of the algorithm
-
+* Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
+* (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
+* Get the data from the multi-party compute and create a component that diplays the output from the MPC API so that there is something pleasant the user can view from the results of the algorithm.(But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
+* Potential stretch goals: visualization of brain volume results.
 
 ## 2. Scope and Features
 Basically, the scope of project or in other word the users of service targets at:  
@@ -20,6 +20,13 @@ Basically, the scope of project or in other word the users of service targets at
 Specifically targets at:  
 * researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
 What will not be covered are doctors treating specific patients who are patient-focused.  
+Someone else that can benefit from this service:  
+The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they dont want to reveal but they need to contribute the results to a common pool and to create a final animation.  
+**Administrators versus end users**
+* The end user want to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
+* The end users also want to be able to share data with colleagues at other medical institutions, to be able to discover information to help treat conditions they're studying.
+* The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
+* The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system / cost too much processing time / power / money  
 Features of the project:
 * Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
 * Extensibility: Provides an extendable interface that allows third-party service plugin
