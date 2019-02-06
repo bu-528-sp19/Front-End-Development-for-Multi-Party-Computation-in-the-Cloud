@@ -19,9 +19,9 @@ Basically, the scope of project or in other word the users of service targets at
 * Medical/neuroscience researchers focusing on the analysis of brain imagery.  
 
 Specifically targets at:  
-* researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions. 
-
+* researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
 What will not be covered are doctors treating specific patients who are patient-focused.  
+
 **Someone else that can benefit from this service**  
 The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they dont want to reveal but they need to contribute the results to a common pool and to create a final animation.  
 
@@ -31,7 +31,7 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
 * The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system / cost too much processing time / power / money  
 
-Features of the project:
+**Features of the project**
 * Performance: This project really cares about performance and speed of the data processing, which is a main concern for the project.
 * Extensibility: Provides an extendable interface that allows third-party service plugin.
 * Security: The data which is passed into system from one institution cannot be accessed by another institution.
@@ -52,6 +52,13 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 ### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+
+### Details about improving performance about data 
+One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end.  
+So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance. 
+
+### Redux versu Undux
+
 
 ## 4. Acceptance criteria(MVP)
 - Design an efficient front-end interface to interact between users and cloud server.
