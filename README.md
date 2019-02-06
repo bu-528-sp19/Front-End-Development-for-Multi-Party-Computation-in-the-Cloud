@@ -50,7 +50,12 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
-Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance
+- Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance.
+- Look at replacing undux with redux: 
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
 
 
 ### A brief flow diagram to show how the front-end works:
@@ -67,15 +72,15 @@ Potential stretch goals are:
 ## 5. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
 
-- Sprint1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding about the ChRIS platform and ChRIS UI project of redhat.
+- Sprint 1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding about the ChRIS platform and ChRIS UI project of redhat.
 
-- Sprint2(weeks 4&5): start the redux implementation in ChRIS Store, rewrite the frame by using Redux and fetch all the data object into the caches.
+- Sprint 2(weeks 4&5): start the redux implementation in ChRIS Store, rewrite the frame by using Redux and fetch all the data object into the caches.
 
-- Sprint3(weeks 6&7): start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
+- Sprint 3(weeks 6&7): start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
-- Sprint4(weeks 8&9): creating some unit for testing and ensuring redux can work correctly 
+- Sprint 4(weeks 8&9): creating some unit for testing and ensuring redux can work correctly 
 
-- Sprint5(from week9): building new front end component for visualization of brain volume calculation.
+- Sprint 5(from week9): building new front end component for visualization of brain volume calculation.
 
 ## 6. Division of Work
 to be decided
