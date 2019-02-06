@@ -2,9 +2,9 @@
 
 ## Project Description
 
-The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS. ChRIS is an open source framework that utilizes cloud technologies to democratize medical analytics application development and enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities.  The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
+The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS platform. ChRIS is an open source framework that utilizes cloud technologies to democratize medical analytics application development and enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities.  The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
 
-The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux).
+The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux), a big component of the MPC for this front end is taking the results of the MPC and visualizing for the user so they can consume the data.
 
 
 ## 1. Vision and Goals
@@ -22,7 +22,7 @@ Specifically targets at:
 * researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions. 
 
 What will not be covered are doctors treating specific patients who are patient-focused.  
-Someone else that can benefit from this service:  
+**Someone else that can benefit from this service**  
 The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they dont want to reveal but they need to contribute the results to a common pool and to create a final animation.  
 
 **Administrators versus end users want**
@@ -32,8 +32,9 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 * The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system / cost too much processing time / power / money  
 
 Features of the project:
-* Performance: This project really cares about performance and speed of the data, which is a main concern for the project 
-* Extensibility: Provides an extendable interface that allows third-party service plugin
+* Performance: This project really cares about performance and speed of the data processing, which is a main concern for the project.
+* Extensibility: Provides an extendable interface that allows third-party service plugin.
+* Security: The data which is passed into system from one institution cannot be accessed by another institution.
 
 ## 3. Solution Concept
 
