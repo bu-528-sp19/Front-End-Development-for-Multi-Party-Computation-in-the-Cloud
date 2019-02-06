@@ -4,7 +4,7 @@
 
 The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS platform. ChRIS is an open source framework that utilizes cloud technologies to democratize medical analytics application development and enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities.  The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
 
-The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux), a big component of the MPC for this front end is taking the results of the MPC and visualizing for the user so they can consume the data.
+The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux), and after that you can get data from MPC and create a component to display the output from the MPC API.
 
 
 ## 1. Vision and Goals
@@ -66,11 +66,12 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ## 4. Acceptance criteria
-Minimum acceptance criteria is:
+Minimum Viable Product are:
 - Design an efficient front-end interface to interact between users and cloud server.
 - Understand the multiparty computation structure, optimize the front end to help users search data faster
 
 Potential stretch goals are:  
+— Get page response time down
 - visualization of brain volume results.
 
 ## 5. Release Planning
