@@ -53,7 +53,8 @@ Key design decisions and motivation behind them:
 - Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance.
 - Look at replacing undux with redux:
 
-Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage state and data for ReactJS applications of all sizes. Below is the comparation between Redux and Undux.
+Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
+
 | Tables        | Redux         | Undux |
 |:-------------:|-------------|-----|
 | Speed      | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
