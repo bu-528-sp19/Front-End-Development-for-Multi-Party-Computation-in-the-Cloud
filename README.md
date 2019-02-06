@@ -18,8 +18,10 @@ Basically, the scope of project or in other word the users of service targets at
 * Medical/neuroscience researchers focusing on the analysis of brain imagery.  
 
 Specifically targets at:  
-* researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.  
-What will not be covered are doctors treating specific patients who are patient-focused.  
+* Researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.
+
+What will not be covered are:  
+* Doctors treating specific patients who are patient-focused.  
 
 **Someone else that can benefit from this service**  
 The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they dont want to reveal but they need to contribute the results to a common pool and to create a final animation.  
@@ -42,11 +44,11 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ### Some concepts about the project in the diagram:
-- **Plugin:** A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin includes input and output.
-- **Pipeline:** A pipeline is a template that can be used to process data.
-- **Feed:** A feed is a specific run of a pipeline.
-- **Data:** Data is the actual data that feeds operate on / manipulate.
-- **Project:** A composition of feeds and maybe ACLs and metadata (notes, chats, labels, etc.) for collaboration.
+- Plugin: A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin includes input and output.
+- Pipeline: A pipeline is a template that can be used to process data.
+- Feed: A feed is a specific run of a pipeline.
+- Data: Data is the actual data that feeds operate on / manipulate.
+- Project: A composition of feeds and maybe ACLs and metadata (notes, chats, labels, etc.) for collaboration.
 
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
@@ -71,8 +73,8 @@ Minimum Viable Product are:
 - Understand the multiparty computation structure, optimize the front end to help users search data faster
 
 Potential stretch goals are:  
-— Get page response time down
-- visualization of brain volume results.
+- Get page response time down
+- Visualization of brain volume results.
 
 ## 5. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
@@ -88,7 +90,7 @@ Potential stretch goals are:
 - Sprint 5(from week9): building new front end component for visualization of brain volume calculation.
 
 ## 6. Division of Work
-to be decided
+To be decided
 
 - Qingxing Li:
 - Yicun Hou:
