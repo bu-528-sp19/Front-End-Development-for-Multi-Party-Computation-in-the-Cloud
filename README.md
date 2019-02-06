@@ -69,6 +69,7 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 Minimum acceptance criteria is:
 - Design an efficient front-end interface to interact between users and cloud server.
 - Understand the multiparty computation structure, optimize the front end to help users search data faster
+
 Potential stretch goals are:  
 - visualization of brain volume results.
 
