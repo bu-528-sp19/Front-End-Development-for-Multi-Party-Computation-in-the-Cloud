@@ -14,7 +14,7 @@ The project is based on the previous backend API -- [ChRIS API](https://fnndsc.g
 * Get the data from the multi-party compute and create a component that diplays the output from the MPC API so that there is something pleasant the user can view from the results of the algorithm.(But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
 
 ## 2. Scope and Features
-Basically, the scope of project or in other word the users of service targets at:  
+Basically, the scope of the project or in other words the target users are:  
 * Medical/neuroscience researchers focusing on the analysis of brain imagery.  
 
 Specifically targets at:  
@@ -27,7 +27,7 @@ What will not be covered are:
 The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they don't want to reveal but they need to contribute the results to a common pool and to create a final animation.  
 
 **Administrators versus end users want**
-* The end user want to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
+* The end user wants to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
 * The end users also want to be able to share data with colleagues at other medical institutions, to be able to discover information to help treat conditions they're studying.
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
 * The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system / cost too much processing time / power / money  
@@ -35,7 +35,7 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 **Features of the project**
 * Performance: This project really cares about performance and speed of the data processing, which is a main concern for the project.
 * Extensibility: Provides an extendable interface that allows third-party service plugin.
-* Security: The data which is passed into system from one institution cannot be accessed by another institution.
+* Security: The data which is passed into systems from one institution cannot be accessed by another institution.
 
 ## 3. Solution Concept
 
@@ -52,7 +52,7 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
-- Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.
+- Improve data performance by Redux: One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.
 
 - Look at replacing undux with redux:
 
@@ -61,7 +61,7 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 | Tables        | Redux         | Undux |
 |:-------------:|-------------|-----|
 | Speed      | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
-| Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes its harder to trace code   |   Do every thing right in your view |
+| Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes its harder to trace code   |   Do everything right in your view |
 | Safety | Really hard to type safely      |    100% typesafe |
 
 
