@@ -52,7 +52,7 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 Key design decisions and motivation behind them:  
 - Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance.
 - Look at replacing undux with redux:
-|  | __Redux__ | __Undux__ |
+| __Aspect__ | __Redux__ | __Undux__ |
 |-----|-----|-----|
 | Speed | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
 | Trace the code | Actions, creators, types, reducers, callers spread all across lots of files | Do every thing right in your view |
