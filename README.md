@@ -24,7 +24,7 @@ What will not be covered are:
 * Doctors treating specific patients who are patient-focused.  
 
 **Someone else that can benefit from this service**  
-The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they dont want to reveal but they need to contribute the results to a common pool and to create a final animation.  
+The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they don't want to reveal but they need to contribute the results to a common pool and to create a final animation.  
 
 **Administrators versus end users want**
 * The end user want to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
@@ -52,7 +52,8 @@ Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
-- Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, so in this way by caching data in redux, we can improve our data performance.
+- Improve data performace by Redux: One of the major assignment for our project is to improving data speed and preformance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.
+
 - Look at replacing undux with redux:
 
 Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
@@ -63,14 +64,15 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 | Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes its harder to trace code   |   Do every thing right in your view |
 | Safety | Really hard to type safely      |    100% typesafe |
 
+
 ### A brief flow diagram to show how the front-end works:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ## 4. Acceptance criteria
 Minimum Viable Product are:
-- Design an efficient front-end interface to interact between users and cloud server.
-- Understand the multiparty computation structure, optimize the front end to help users search data faster
+- Design an efficient front-end interface to interact between users and cloud server. 
+- Understand the multiparty computation structure, optimize the front end to help users search data faster. 
 
 Potential stretch goals are:  
 - Get page response time down
