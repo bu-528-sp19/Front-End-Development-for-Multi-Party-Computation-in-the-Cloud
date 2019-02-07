@@ -5,12 +5,10 @@
 The project is the front end of ChRIS platform(ChRIS Research Integration System, is a web-based medical image platform that allows for various forms of medical image(Ex: MRIs) processing). The Chris front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. Also, with the power of MPC, the users can get the image processing result in a few second.
 
 ## 1. Vision and Goals
-## The goal of this project can be summarized as three parts: ##
-* Rewrite ChRIS store using Redux
-Right now, the ChRIS store is built by Undux and we gonna re-write it using Redux which is more popular.
+The goal of this project can be summarized as three parts:
+* Rewrite ChRIS store using Redux. Right now, the ChRIS store is built by Undux and we gonna re-write it using Redux which is more popular.
 * Built a frond end for the ChRIS platform using React and Redux.
-* Create a component to visualize the Data from MPC
-Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm.
+* Create a component to visualize the Data from MPC. Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm.
 
 ## 2. Scope and Features
 Basically, the scope of the project or in other words the target users are:  
