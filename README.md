@@ -40,6 +40,7 @@ The front-end will not deliver:
 This diagram gives a brief overview of the ChRIS platform.
 * While ChRIS processing tasks, the input data and plugins are retrieved by ChRIS platform from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
 * Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
+* The ChRIS Store is an autonomous unit includes bouth front-end and back-end. ChRIS store 
 * More work needed to be added... 
 
 ### Global Architectural Structure Of ChRIS:
