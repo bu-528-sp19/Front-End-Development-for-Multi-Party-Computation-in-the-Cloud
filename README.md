@@ -40,16 +40,14 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 
 ## 3. Solution Concept
 
-### Global Architectural Structure Of the Project:
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/diagram.png">
-Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+### ChRIS Detail Diagram:
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
+* This diagram explains how input data and plugins are retrieved by ChRIS from a data source and a plugin store respectively and then pushed to a cloud-based compute environment. Once computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
+* Our main work is related to the **store**, which we are going to rewrite with React and Redux. Then we should create a component that get data from the **compute environment**(in other words, called MPC API) to display the output.
 
-### Some concepts about the project in the diagram:
-- Plugin: A containerized set of image processing software that can be applied to image data input into the plugin in order to manipulate it. Plugin includes input and output.
-- Pipeline: A pipeline is a template that can be used to process data.
-- Feed: A feed is a specific run of a pipeline.
-- Data: Data is the actual data that feeds operate on / manipulate.
-- Project: A composition of feeds and maybe ACLs and metadata (notes, chats, labels, etc.) for collaboration.
+### Global Architectural Structure Of ChRIS:
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png">
+* This diagram provides a deeper dive showing how ChRIS resides within Boston Children’s Hospital, sending the data to MOC specifically to an IO handler within OpenShift. The data is then stored inside of Swift within OpenStack. This is to enable the segmentation of data between jobs. The OpenShift process manager processes the plugin container from ChRIS and launches it into a job starting with an init container that pulls the data out of Swift and makes it available for the image plugin container, which passes its result to a publish container that passes the data to Swift, and the IO Handler passes the output data back to ChRIS.
 
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
