@@ -1,4 +1,4 @@
-# Fron End Development for Multi Party Computation in the Cloud
+# Fron-End Development for Multi Party Computation in the Cloud
 
 ## 1. Project Description
 
@@ -17,27 +17,27 @@ Until February 6 2019, the MPC API haven't been implemented yet. Based on the sc
 After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
 
 ## 3. Scope and Features
-The front end will deliever:
-* Each user has their unique credentials
-* Performance improvement. The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale
-* Extensibility. Provides an extendable interface that allows third-party service plugin.
-* Security. The data which is passed into systems from one institution cannot be accessed by another institution.
-* The multi party computation feature will coming after February
+The front-end will deliver:
+* Privacy: Each user has their unique credentials.
+* Performance improvement: The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale.
+* Extensibility: Provides an extendable interface that allows third-party service plugin.
+* Security: The data which is passed into systems from one institution cannot be accessed by another institution.
+* The multi-party-computation feature will come after February.
 
-The front end will not deliever:
-* Image processing functions are provided by the ChRIS APIs, not the front end 
+The front- end will not deliver:
+* Image processing functions are provided by the ChRIS APIs, not the front end module.
 
 ## 4. Users/Personas Of The Project
 Basically, the target users are:  
-* Medical/neuroscience researchers focusing on the analysis of brain imagery.  
+* Medical/neuroscience researchers focusing on the analysis of brain imaging.  
 * Specifically targets are researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions. 
 
 Someone else that can benefit from this service:
 * The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they don't want to reveal but they need to contribute the results to a common pool and to create a final animation.  
 
-Non-professonal users or users without requirement of computation speed are not the target of ChRIS
+Non-professional users or users without the requirement of computation speed are not the targets of ChRIS
 
-Administrators versus end users want:
+Administrators versus end users want
 * The end user wants to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
 * The end users also want to be able to share data with colleagues at other medical institutions, to be able to discover information to help treat conditions they're studying.
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
@@ -45,7 +45,7 @@ Administrators versus end users want:
 
 ## 5. Solution Concept
 * The pipelines(collection of plugins) will be shareable across different accounts
-* The feeds are belong to the users, ChRIS will not share each user's own feed
+* The feeds belong to the users, ChRIS will not share each user's own feed
 * Users can add tags for their feeds, ChRIS will not share each user's tags
 * Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
 * (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
@@ -53,21 +53,20 @@ Administrators versus end users want:
 ### ChRIS Detail Diagram:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
 
-* This diagram explains how input data and plugins are retrieved by ChRIS from a data source and a plugin store respectively and then pushed to a cloud-based compute environment. Once computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
-* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.  
-
-More work needed to be added... 
+* This diagram explains how input data and plugins are retrieved by ChRIS from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
+* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
+* More work needed to be added... 
 
 ### Global Architectural Structure Of ChRIS:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png">
 
-* This diagram provides a deeper dive showing how ChRIS resides within Boston Children’s Hospital, sending the data to MOC specifically to an IO handler within OpenShift. The data is then stored inside of Swift within OpenStack. This is to enable the segmentation of data between jobs. The OpenShift process manager processes the plugin container from ChRIS and launches it into a job starting with an init container that pulls the data out of Swift and makes it available for the image plugin container, which passes its result to a publish container that passes the data to Swift, and the IO Handler passes the output data back to ChRIS.
+* This diagram provides a deeper dive showing how ChRIS resides within Boston Children’s Hospital, sending the data to MOC specifically to an IO handler within OpenShift. The data is then stored inside of Swift within OpenStack. This is to enable the segmentation of data between jobs. The OpenShift process manager processes the plugin-container from ChRIS and launches it into a job starting with an init container that pulls the data out of Swift and makes it available for the image plugin container, which passes its result to a publish container that passes the data to Swift, and the IO Handler passes the output data back to ChRIS.
 
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
-- Improve data performance by Redux: One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.
+- Improve data performance by Redux: One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with a large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.
 
-- Look at replacing undux with redux:
+- Look at replacing Undux with Redux:
 
 Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
 
@@ -75,7 +74,7 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 |:-------------:|-------------|-----|
 | Speed      | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
 | Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes its harder to trace code   |   Do everything right in your view |
-| Safety | Really hard to type safely      |    100% typesafe |
+| Safety | Really hard to type-safely      |    100% typesafe |
 
 
 ### A brief flow diagram to show how the front-end works:
@@ -83,18 +82,18 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
 ## 6. Acceptance criteria
-Minimum Viable Product are:
+Minimum Viable Product:
 - Design an efficient front-end interface to interact between users and cloud server. 
 - Understand the multiparty computation structure, optimize the front end to help users search data faster. 
 
-Potential stretch goals are:  
+Potential stretch goals:  
 - Get page response time down
 - Visualization of brain volume results.
 
 ## 7. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
 
-- Sprint 1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding about the ChRIS platform and ChRIS UI project of redhat.
+- Sprint 1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat.
 
 - Sprint 2(weeks 4&5): start the redux implementation in ChRIS Store, rewrite the frame by using Redux and fetch all the data object into the caches.
 
