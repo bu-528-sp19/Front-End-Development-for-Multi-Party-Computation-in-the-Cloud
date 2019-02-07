@@ -78,6 +78,7 @@ Minimum Viable Product:
 Potential stretch goals:  
 - Get page response time down
 - Visualization of brain volume results.
+- Deploy UI to MOC and scale test in the MOC.
 
 ## 6. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
