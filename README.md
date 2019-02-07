@@ -2,17 +2,15 @@
 
 ## Project Description
 
-The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS platform. ChRIS(ChRIS Research Integration System) is a web-based medical image platform that allows for various forms of medical image(Ex: MRIs) processing.  
-ChRIS itself is comprised of multiple open source projects(https://github.com/FNNDSC/) and the intention is to make the research and capabilities available to other hospitals.  
-
-The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux), and after that you can get data from MPC and create a component to display the output from the MPC API.
-
+The project is the front end of ChRIS platform(ChRIS Research Integration System, is a web-based medical image platform that allows for various forms of medical image(Ex: MRIs) processing). The Chris front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. Also, with the power of MPC, the users can get the image processing result in a few second.
 
 ## 1. Vision and Goals
-
-* Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
-* (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
-* Get the data from the multi-party compute and create a component that diplays the output from the MPC API so that there is something pleasant the user can view from the results of the algorithm.(But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
+## The goal of this project can be summarized as three parts: ##
+* Rewrite ChRIS store using Redux
+Right now, the ChRIS store is built by Undux and we gonna re-write it using Redux which is more popular.
+* Built a frond end for the ChRIS platform using React and Redux.
+* Create a component to visualize the Data from MPC
+Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm.
 
 ## 2. Scope and Features
 Basically, the scope of the project or in other words the target users are:  
@@ -39,7 +37,9 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 * Security: The data which is passed into systems from one institution cannot be accessed by another institution.
 
 ## 3. Solution Concept
-
+* Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
+* (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
+* (But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
 ### ChRIS Detail Diagram:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
 
