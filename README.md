@@ -1,22 +1,10 @@
 # Fron-End Development for Multi-Party-Computation in the Cloud
 
-## 1. Project Description
+## 1. Vision and Goals
 
-The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. Also, with the power of MPC, the users can get the image processing result in a few second.
+The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. Also, with the power of Massachusetts Open Cloud (MOC), the users can get the image processing result in a few second.
 
-## 2. Vision and Goals
-The current goal of this project can be summarized as following parts:
-* Built the front end of ChRIS platform using React.
-* Rewrite ChRIS store using Redux to set up cache for the data source, improving data performance and speed, then replace Redux with Undux.
-* Create a component to visualize the Data from MPC API.  
-
-More jobs needed to be added...
-
-Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
-   
-After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
-
-## 3. Scope and Features
+## 2. Scope and Features
 The front-end will deliver:
 * Privacy: Each user has their unique credentials.
 * Performance improvement: The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale.
@@ -27,7 +15,7 @@ The front-end will deliver:
 The front-end will not deliver:
 * Image processing functions are provided by the ChRIS APIs, not the front end module.
 
-## 4. Users/Personas Of The Project
+## 3. Users/Personas Of The Project
 Basically, the target users are:  
 * Medical/neuroscience researchers focusing on the analysis of brain imaging.  
 * Specifically targets are researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions. 
@@ -43,7 +31,7 @@ Administrators versus end users want
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
 * The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system / cost too much processing time / power / money  
 
-## 5. Solution Concept
+## 4. Solution Concept
 * The pipelines(collection of plugins) will be shareable across different accounts
 * The feeds belong to the users, ChRIS will not share each user's own feed
 * Users can add tags for their feeds, ChRIS will not share each user's tags
@@ -81,7 +69,7 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
-## 6. Acceptance criteria
+## 5. Acceptance criteria
 Minimum Viable Product:
 - Design an efficient front-end interface to interact between users and cloud server. 
 - Understand the multiparty computation structure, optimize the front end to help users search data faster. 
@@ -90,8 +78,19 @@ Potential stretch goals:
 - Get page response time down
 - Visualization of brain volume results.
 
-## 7. Release Planning
+## 6. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
+
+The current goal of this project can be summarized as following parts:
+* Built the front end of ChRIS platform using React.
+* Rewrite ChRIS store using Redux to set up cache for the data source, improving data performance and speed, then replace Redux with Undux.
+* Create a component to visualize the Data from MPC API.  
+
+More jobs needed to be added...
+
+Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
+   
+After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
 
 - Sprint 1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat.
 
@@ -111,6 +110,10 @@ Potential stretch goals:
 - [4] Fnndsc. “FNNDSC/ChRIS_store.” GitHub, 14 Dec. 2018, github.com/FNNDSC/ChRIS_store.
 - [5] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” GitHub, github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design.
 - [6] Undux official website(https://undux.org/)
+
+#### Our mentors
+- Joseph Caiani
+- Máirín Duffy
 
 #### Contact us
 
