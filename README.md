@@ -66,10 +66,6 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 | Safety | Really hard to type-safely      |    100% typesafe |
 
 
-### A brief flow diagram to show how the front-end works:
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
-Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
-
 ## 5. Acceptance criteria
 Minimum Viable Product:
 - Design an efficient front-end interface to interact between users and cloud server. 
