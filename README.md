@@ -89,9 +89,9 @@ Potential stretch goals are:
 
 - Sprint 3(weeks 6&7): start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
-- Sprint 4(weeks 8&9): creating some unit for testing and ensuring redux can work correctly 
+- Sprint 4(weeks 8&9): create some unit for testing and ensuring redux can work correctly 
 
-- Sprint 5(from week9): building new front end component for visualization of brain volume calculation.
+- Sprint 5(from week9): build new front end component for visualization of brain volume calculation.
 
 ## 6. Division of Work
 To be decided
