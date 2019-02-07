@@ -93,7 +93,7 @@ Until February 6 2019, the MPC API haven't been implemented yet. Based on the sc
 
 - Sprint 4(weeks 8&9): Create some unit for testing and ensuring redux can work correctly.
 
-- Sprint 5(from week9): Build new front end component to visualize the MOC calculation reult.
+- Sprint 5(from week9): Build new front end component to visualize the MOC calculation result.
 
 More jobs needed to be added...
 
