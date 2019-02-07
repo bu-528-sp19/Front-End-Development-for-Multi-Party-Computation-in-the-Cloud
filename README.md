@@ -51,7 +51,7 @@ This diagram gives a brief overview of the ChRIS platform.
 Key design decisions and motivation behind them:  
 - Improve data performance by Redux: One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with a large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.
 
-- Look at replacing Undux with Redux:
+- Look at replacing [Undux](https://undux.org/) with Redux:
 
 Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
 
@@ -91,9 +91,8 @@ More jobs needed to be added...
 #### Reference
 - [1] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 - [2] Duffy, Mairin. “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, BU Research, 19 June 2018, www.bu.edu/rhcollab/2018/06/19/chris-at-the-red-hat-summit/.
-- [3] Fnndsc. “FNNDSC/ChRIS_store.” GitHub, 14 Dec. 2018, (github.com/FNNDSC/ChRIS_store).
-- [4] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” GitHub, (github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design).
-- [5] Undux official website(https://undux.org/)
+- [3] Fnndsc. “FNNDSC/ChRIS_store.” [GitHub](github.com/FNNDSC/ChRIS_store), 14 Dec. 2018.
+- [4] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” [GitHub](github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design).
 
 #### Our mentors
 - Joseph Caiani
