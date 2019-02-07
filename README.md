@@ -10,7 +10,9 @@ The goal of this project can be summarized as three parts:
    - Right now, the ChRIS store is built by Undux and we gonna re-write it using Redux which is more popular.
 2. Built a frond end for the ChRIS platform using React and Redux.
 3. Create a component to visualize the Data from MPC.
-   - Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm.
+   - Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
+   
+After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
 
 ## 2. Scope and Features
 Basically, the scope of the project or in other words the target users are:  
@@ -103,11 +105,12 @@ To be decided
 ** **
 
 #### Reference
-- “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
-- Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
-- Fnndsc. “FNNDSC/ChRIS_store.” GitHub, 14 Dec. 2018, github.com/FNNDSC/ChRIS_store.
-- Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” GitHub, github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design.
-- [Undux official website](https://undux.org/)
+- [1] “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
+- [2] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+- [3] Duffy, Mairin. “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, BU Research, 19 June 2018, www.bu.edu/rhcollab/2018/06/19/chris-at-the-red-hat-summit/.
+- [4] Fnndsc. “FNNDSC/ChRIS_store.” GitHub, 14 Dec. 2018, github.com/FNNDSC/ChRIS_store.
+- [5] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” GitHub, github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design.
+- [6] Undux official website(https://undux.org/)
 
 #### Contact us
 
