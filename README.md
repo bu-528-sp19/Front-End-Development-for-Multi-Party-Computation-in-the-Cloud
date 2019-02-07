@@ -2,7 +2,8 @@
 
 ## Project Description
 
-The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS platform. ChRIS is an open source framework that utilizes cloud technologies to democratize medical analytics application development and enables healthcare organizations to keep owning their data while benefiting from public cloud processing capabilities.  The ChRIS UI is a platform to enable ChRIS researchers to be able to easily access and use the latest image processing technology as well as the power and speed of cloud computing in exploring and making discoveries in medical imaging data. Enabling collaboration and sharing between researchers is an important secondary goal.
+The project is closely related to ChRIS. In some ways, the project is the front end of ChRIS platform. ChRIS(ChRIS Research Integration System) is a web-based medical image platform that allows for various forms of medical image(Ex: MRIs) processing.  
+ChRIS itself is comprised of multiple open source projects(https://github.com/FNNDSC/) and the intention is to make the research and capabilities available to other hospitals.  
 
 The project is based on the previous backend API -- [ChRIS API](https://fnndsc.github.io/fnndsc/chrisdoc/), our main work is to rewrite the data store/global state of UI so the components can have access to the data by using [React](https://github.com/facebook/react) and [Redux](https://github.com/reduxjs/redux), and after that you can get data from MPC and create a component to display the output from the MPC API.
 
