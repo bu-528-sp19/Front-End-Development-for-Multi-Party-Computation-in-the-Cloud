@@ -33,12 +33,7 @@ The front-end will not deliver:
 * The MPC is not included in the front end. Instead, the front end will call the MPC API directly.
 
 ## 4. Solution Concept
-* The pipelines(collection of plugins) will be shareable across different accounts
-* The feeds belong to the users, ChRIS will not share each user's own feed
-* Users can add tags for their feeds, ChRIS will not share each user's tags
-* Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
-* (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
-* (But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
+
 ### ChRIS Detail Diagram:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
 
