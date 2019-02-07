@@ -2,7 +2,7 @@
 
 ## 1. Vision and Goals
 
-The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
+The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store[3] and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[2]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
 
 ## 2. Users/Personas Of The Project
 Basically, the target users are:  
@@ -98,12 +98,11 @@ Until February 6 2019, the MPC API haven't been implemented yet. Based on the sc
 More jobs needed to be added...
 
 #### Reference
-- [1] “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
-- [2] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
-- [3] Duffy, Mairin. “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, BU Research, 19 June 2018, www.bu.edu/rhcollab/2018/06/19/chris-at-the-red-hat-summit/.
-- [4] Fnndsc. “FNNDSC/ChRIS_store.” GitHub, 14 Dec. 2018, github.com/FNNDSC/ChRIS_store.
-- [5] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” GitHub, github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design.
-- [6] Undux official website(https://undux.org/)
+- [1] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
+- [2] Duffy, Mairin. “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, BU Research, 19 June 2018, www.bu.edu/rhcollab/2018/06/19/chris-at-the-red-hat-summit/.
+- [3] Fnndsc. “FNNDSC/ChRIS_store.” GitHub, 14 Dec. 2018, (github.com/FNNDSC/ChRIS_store).
+- [4] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” GitHub, (github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design).
+- [5] Undux official website(https://undux.org/)
 
 #### Our mentors
 - Joseph Caiani
