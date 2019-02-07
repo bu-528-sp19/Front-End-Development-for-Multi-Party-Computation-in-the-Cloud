@@ -24,7 +24,7 @@ The front-end will deliver:
 * Security: The data which is passed into systems from one institution cannot be accessed by another institution.
 * The multi-party-computation feature will come after February.
 
-The front- end will not deliver:
+The front-end will not deliver:
 * Image processing functions are provided by the ChRIS APIs, not the front end module.
 
 ## 4. Users/Personas Of The Project
