@@ -1,4 +1,4 @@
-# Front-End-Development-for-Multi-Party-Computation-in-the-Cloud
+# Fron End Development for Multi Party Computation in the Cloud
 
 ## 1. Project Description
 
