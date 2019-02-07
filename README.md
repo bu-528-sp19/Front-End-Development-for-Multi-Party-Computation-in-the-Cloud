@@ -6,25 +6,25 @@ The project is the front end of ChRIS platform(ChRIS Research Integration System
 
 ## 2. Vision and Goals
 The current goal of this project can be summarized as following parts:
-* Rewrite ChRIS store using Redux. Right now, the ChRIS store is built by Undux and we need to re-write it using Redux
 * Built the front end of ChRIS platform using React.
-* Use Redux to set up cache for the data source, improving data performance and speed, then replace Redux with Undux.
+* Rewrite ChRIS store using Redux to set up cache for the data source, improving data performance and speed, then replace Redux with Undux.
 * Create a component to visualize the Data from MPC API.  
-* More jobs needed to be added.  
+
+More jobs needed to be added...
 
 Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
    
 After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
 
 ## 3. Scope and Features
-The front- end will deliever:
+The front end will deliever:
 * Each user has their unique credentials
 * Performance improvement. The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale
 * Extensibility. Provides an extendable interface that allows third-party service plugin.
 * Security. The data which is passed into systems from one institution cannot be accessed by another institution.
 * The multi party computation feature will coming after February
 
-The front- end will not deliever:
+The front end will not deliever:
 * Image processing functions are provided by the ChRIS APIs, not the front end 
 
 ## 4. Users/Personas Of The Project
@@ -37,7 +37,7 @@ Someone else that can benefit from this service:
 
 Non-professonal users or users without requirement of computation speed are not the target of ChRIS
 
-Administrators versus end users want
+Administrators versus end users want:
 * The end user wants to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
 * The end users also want to be able to share data with colleagues at other medical institutions, to be able to discover information to help treat conditions they're studying.
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
@@ -54,8 +54,9 @@ Administrators versus end users want
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
 
 * This diagram explains how input data and plugins are retrieved by ChRIS from a data source and a plugin store respectively and then pushed to a cloud-based compute environment. Once computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
-* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
-* More work needed to be added... 
+* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.  
+
+More work needed to be added... 
 
 ### Global Architectural Structure Of ChRIS:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png">
