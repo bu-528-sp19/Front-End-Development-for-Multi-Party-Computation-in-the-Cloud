@@ -15,31 +15,47 @@ Until February 6 2019, the MPC API haven't been implemented yet. Based on the sc
    
 After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
 
-## 2. Scope and Features
-Basically, the scope of the project or in other words the target users are:  
+## 2. Vision and Goals
+The goal of this project can be summarized as three parts:
+1. Rewrite ChRIS store using Redux. 
+   - Right now, the ChRIS store is built by Undux and we gonna re-write it using Redux which is more popular.
+2. Built a frond end for the ChRIS platform using React and Redux.
+3. Create a component to visualize the Data from MPC.
+   - Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
+   
+After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[3]. What's more, the ChRIS platform can be developed in to an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
+
+## 3. Scope and Features
+The front- end will deliever:
+* Each user has their unique credentials
+* Performance improvement. The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale
+* Extensibility. Provides an extendable interface that allows third-party service plugin.
+* Security. The data which is passed into systems from one institution cannot be accessed by another institution.
+* The multi party computation feature will coming after February
+
+The front- end will not deliever:
+* Image processing functions are provided by the ChRIS APIs, not the front end 
+
+## 4. Users/Personas Of The Project
+Basically, the target users are:  
 * Medical/neuroscience researchers focusing on the analysis of brain imagery.  
+* Specifically targets are researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions. 
 
-Specifically targets at:  
-* Researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions.
+Someone else that can benefit from this service:
+* The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they don't want to reveal but they need to contribute the results to a common pool and to create a final animation.  
 
-What will not be covered are:  
-* Doctors treating specific patients who are patient-focused.  
+Non-professonal users or users without requirement of computation speed are not the target of ChRIS
 
-**Someone else that can benefit from this service**  
-The entire platform is generalizable to any kind of image processing, it doesn't even have to be medical images. For example, different animation studios working together, some using proprietary computations they don't want to reveal but they need to contribute the results to a common pool and to create a final animation.  
-
-**Administrators versus end users want**
+Administrators versus end users want
 * The end user wants to be able to easily submit their processing job, and get an answer back quickly in a format they can understand, that's where the stretch goal of visualization for the standard deviation graph can come in.
 * The end users also want to be able to share data with colleagues at other medical institutions, to be able to discover information to help treat conditions they're studying.
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. they'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
 * The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system / cost too much processing time / power / money  
 
-**Features of the project**
-* Performance: This project really cares about performance and speed of the data processing, which is a main concern for the project.
-* Extensibility: Provides an extendable interface that allows third-party service plugin.
-* Security: The data which is passed into systems from one institution cannot be accessed by another institution.
-
-## 3. Solution Concept
+## 5. Solution Concept
+* The pipelines(collection of plugins) will be shareable across different accounts
+* The feeds are belong to the users, ChRIS will not share each user's own feed
+* Users can add tags for their feeds, ChRIS will not share each user's tags
 * Set up react scaffolding using [create-react-app](https://github.com/facebook/create-react-app) and get familiar with redux.
 * (Crucial work!)Set up [ChRIS store UI](https://github.com/FNNDSC/ChRIS_store_ui) by using redux and then look at replacing [undux](https://github.com/bcherny/undux) with redux in chris store UI, which is a light version of redux.
 * (But the order should be redux first then MPC second since the MPC integration won’t be ready for a little while)
@@ -74,7 +90,7 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/Project-Based%20Feed%20Screen-By-Sreen.png">
 Source: ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 
-## 4. Acceptance criteria
+## 6. Acceptance criteria
 Minimum Viable Product are:
 - Design an efficient front-end interface to interact between users and cloud server. 
 - Understand the multiparty computation structure, optimize the front end to help users search data faster. 
@@ -83,7 +99,7 @@ Potential stretch goals are:
 - Get page response time down
 - Visualization of brain volume results.
 
-## 5. Release Planning
+## 7. Release Planning
 (This is just a temporary plan, will be modified depending on the progress...)
 
 - Sprint 1(weeks 2&3): get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding about the ChRIS platform and ChRIS UI project of redhat.
@@ -96,14 +112,6 @@ Potential stretch goals are:
 
 - Sprint 5(from week9): build new front end component for visualization of brain volume calculation.
 
-## 6. Division of Work
-To be decided
-
-- Qingxing Li:
-- Yicun Hou:
-- Haoyu Xu:
-
-** **
 
 #### Reference
 - [1] “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, Boston University, www.bu.edu/rhcollab/projects/radiology/.
@@ -118,3 +126,4 @@ To be decided
 - Qingxing Li lqx1996@bu.edu
 - Yicun Hou yicunhou@bu.edu
 - Haoyu Xu xhy@bu.edu
+
