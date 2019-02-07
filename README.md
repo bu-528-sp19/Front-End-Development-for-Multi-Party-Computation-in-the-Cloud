@@ -42,7 +42,8 @@ The front-end will not deliver:
 ### ChRIS Detail Diagram:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
 
-* This diagram explains how input data and plugins are retrieved by ChRIS from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
+This diagram gives a brief overview of the ChRIS platform.
+* While ChRIS processing tasks, the input data and plugins are retrieved by ChRIS platform from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
 * Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
 * More work needed to be added... 
 
@@ -77,7 +78,6 @@ Potential stretch goals:
 - Deploy UI to MOC and scale test in the MOC.
 
 ## 6. Release Planning
-(This is just a temporary plan, will be modified depending on the progress...)
 
 Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
 
