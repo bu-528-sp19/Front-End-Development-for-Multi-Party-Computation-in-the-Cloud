@@ -44,7 +44,7 @@ The entire platform is generalizable to any kind of image processing, it doesn't
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-detail.png">
 
 * This diagram explains how input data and plugins are retrieved by ChRIS from a data source and a plugin store respectively and then pushed to a cloud-based compute environment. Once computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
-* Our main work is related to the **store**, which we are going to rewrite with React and Redux. Then we should create a component that get data from the **compute environment**(in other words, called MPC API) to display the output.
+* Our main work is related to the ChRIS(the green square) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
 
 ### Global Architectural Structure Of ChRIS:
 <img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png">
