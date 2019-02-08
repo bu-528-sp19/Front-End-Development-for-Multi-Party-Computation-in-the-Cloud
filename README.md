@@ -79,9 +79,9 @@ Until February 6 2019, the MPC API haven't been implemented yet. Based on the sc
 
 - Sprint 1(weeks 2&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat.
 
-- Sprint 2(weeks 4&5): Create some unit for testing and ensuring redux can work correctly.
+- Sprint 2(weeks 4&5): Start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
-- Sprint 3(weeks 6&7): Start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
+- Sprint 3(weeks 6&7): Create some unit for testing and ensuring redux can work correctly.
 
 - Sprint 4(weeks 8&9): Deploy the UI on the MOC and incorporate testing to validate functionality.
 
