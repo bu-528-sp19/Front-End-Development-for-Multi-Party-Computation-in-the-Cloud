@@ -44,7 +44,7 @@ This diagram gives a brief overview of the ChRIS platform.
 * More work needed to be added... 
 
 ### Global Architectural Structure Of ChRIS:
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png">
+<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png"></ div>
 
 * This diagram provides a deeper dive showing how ChRIS resides within Boston Children’s Hospital, sending the data to MOC specifically to an IO handler within OpenShift. The data is then stored inside of Swift within OpenStack. This is to enable the segmentation of data between jobs. The OpenShift process manager processes the plugin-container from ChRIS and launches it into a job starting with an init container that pulls the data out of Swift and makes it available for the image plugin container, which passes its result to a publish container that passes the data to Swift, and the IO Handler passes the output data back to ChRIS.
 
@@ -53,11 +53,11 @@ Key design decisions and motivation behind them:
 - Improve data performance by Redux:  
 One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with a large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.  
 Below is the React component structure without Redux and with Redux
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.png" height = "400">
+<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.png" height = "400"></ div>
 
 - Redux component and workflow:  
 The main component in Redux is store, actionCreator and reducer. We are also highly considerly using middlewares(between the framework receiving a request, and the framework generating a response, provides a third-party extension point between dispatching an action, and the moment it reaches the reducer)like [Redux-thunk](https://github.com/reduxjs/redux-thunk) or [Redux-soga](https://github.com/redux-saga/redux-saga) to realize asynchronous API calls, like AJAX calls to communicate with backend.  
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="300">
+<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="300"></div>
 
 - Look at replacing [Undux](https://undux.org/) with Redux:
 
