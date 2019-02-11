@@ -84,7 +84,7 @@ Potential stretch goals:
 
 Until February 6 2019, the MPC API hasn't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
 
-- Sprint 1(weeks 2&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat.
+- Sprint 1(weeks 2&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat. Practice how to implement Redux by updating the Chris-store UI by using Redux. 
 
 - Sprint 2(weeks 4&5): Start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
