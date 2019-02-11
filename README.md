@@ -57,7 +57,7 @@ Below is the React component structure without Redux and with Redux
 
 - Redux component and workflow:  
 The main component in Redux is store, actionCreator and reducer. We are also highly considerly using middlewares(between the framework receiving a request, and the framework generating a response, provides a third-party extension point between dispatching an action, and the moment it reaches the reducer)like Redux-thunk or Redux-soga to realize asynchronous API calls, like AJAX calls.
-<img src="https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif", height="200">
+<img src="https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="500">
 
 - Look at replacing [Undux](https://undux.org/) with Redux:
 
