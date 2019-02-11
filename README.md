@@ -2,7 +2,7 @@
 
 ## 1. Vision and Goals
 
-The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store[3] and Multi-Party-Computation(MPC) API. This project enables users who is not familar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[2]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools in anywhere.
+The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store[3] and Multi-Party-Computation(MPC) API. This project enables users who are not familar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[2]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools anywhere.
 
 ## 2. Users/Personas Of The Project
 Basically, the target users are:  
@@ -40,7 +40,7 @@ The front-end will not deliver:
 This diagram gives a brief overview of the ChRIS platform.
 * While ChRIS processing tasks, the input data and plugins are retrieved by ChRIS platform from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
 * Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
-* The ChRIS Store is an autonomous unit includes bouth front-end and back-end. ChRIS store 
+* The ChRIS Store is an autonomous unit includes both front-end and back-end. ChRIS store 
 * More work needed to be added... 
 
 ### Global Architectural Structure Of ChRIS:
@@ -59,7 +59,7 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 | Tables        | Redux         | Undux |
 |:-------------:|-------------|-----|
 | Speed      | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
-| Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes its harder to trace code   |   Do everything right in your view |
+| Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes it harder to trace code   |   Do everything right in your view |
 | Safety | Really hard to type-safely      |    100% typesafe |
 
 
@@ -75,7 +75,7 @@ Potential stretch goals:
 
 ## 6. Release Planning
 
-Until February 6 2019, the MPC API haven't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
+Until February 6 2019, the MPC API hasn't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
 
 - Sprint 1(weeks 2&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat.
 
@@ -85,7 +85,7 @@ Until February 6 2019, the MPC API haven't been implemented yet. Based on the sc
 
 - Sprint 4(weeks 8&9): Deploy the UI on the MOC and incorporate testing to validate functionality.
 
-- Sprint 5(from week9): Build new front end component to visualize the MOC calculation reult.
+- Sprint 5(from week9): Build a new front end component to visualize the MOC calculation reult.
 
 More jobs needed to be added...
 
