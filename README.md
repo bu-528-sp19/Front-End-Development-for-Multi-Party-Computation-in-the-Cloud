@@ -75,8 +75,8 @@ Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage sta
 
 ## 5. Acceptance criteria
 Minimum Viable Product:
-- Update the Chris-store ui by replacing the Undux with Redux.
-- Design an efficient front-end interface to interact between users and cloud server by using Redux. 
+- Update the Chris-store UI by replacing the Undux with Redux.
+- Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
 - Understand the multiparty computation structure, implement some components to optimize the front end to help users search data faster. 
 
 Potential stretch goals:  
