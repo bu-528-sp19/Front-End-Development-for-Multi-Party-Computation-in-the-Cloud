@@ -92,7 +92,7 @@ More jobs needed to be added...
 #### Reference
 - [1] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
 - [2] Duffy, Mairin. “Boston University Red Hat Collaboratory.” Family and Medical Leave Act (FMLA) | Human Resources, BU Research, 19 June 2018, www.bu.edu/rhcollab/2018/06/19/chris-at-the-red-hat-summit/.
-- [3] Fnndsc. “FNNDSC/ChRIS_store.” [GitHub](github.com/FNNDSC/ChRIS_store), 14 Dec. 2018.
+- [3] Fnndsc. “FNNDSC/ChRIS_store.” [GitHub](https://github.com/FNNDSC/ChRIS_store), 14 Dec. 2018.
 - [4] Fnndsc. “FNNDSC/ChRIS_ultron_backEnd.” [GitHub](github.com/FNNDSC/ChRIS_ultron_backEnd/wiki/ChRIS-REST-API-design).
 
 #### Our mentors
