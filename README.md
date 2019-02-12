@@ -2,7 +2,7 @@
 
 ## 1. Vision and Goals
 
-The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store[3] and Multi-Party-Computation(MPC) API. This project enables users who are not familar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[2]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools anywhere.
+The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store[3] and Multi-Party-Computation(MPC) API. This project enables users who are not familiar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[2]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools anywhere.
 
 ## 2. Users/Personas Of The Project
 Basically, the target users are:  
@@ -53,7 +53,7 @@ This diagram gives a brief overview of the ChRIS platform.
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
 - Improve data performance by Redux:  
-One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and that has to be presented to the user looking at the interface in an efficient way so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with a large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.  
+One of the major assignment for our project is to improving data speed and performance by using Redux. ChRIS has the processing that happens on the cloud nodes, and it has to be presented to the user looking at the interface in an efficient way, so the front end isn't copying the same data over and over or making wasteful calls to the backend that take up time / resources and give a very slow user experience of the front end. So when we use React to build our frontend, Redux has a mechanism that allows you to cache the data in the front end in a ‘store’, and we want to deal with a large amount of data with fewer but enough fetches to make sure the user isn't hindered by showing data, so in this way by caching data in redux, we can improve our data performance.  
 Below is the React component structure without Redux and with Redux
 <div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.png" height = "400"></div>
 
@@ -64,7 +64,7 @@ The main component in Redux is store, actionCreator and reducer. We are also hig
 
 - Look at replacing [Undux](https://undux.org/) with Redux:
 
-Undux is a simple & typesafe alternative to Flux and Redux. Use it to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
+To better understand the mechanism of Redux, we will using Redux to upgrade the ChRIS Store, which is written by Undex. Undux is a simple & typesafe alternative to Flux and Redux, it is used to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
 
 | Tables        | Redux         | Undux |
 |:-------------:|-------------|-----|
@@ -90,13 +90,13 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 
 - Sprint 1(weeks 2&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat. Practice how to implement Redux by updating the Chris-store UI by using Redux. 
 
-- Sprint 2(weeks 4&5): Start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
+- Sprint 2(weeks 4&5): Re-write ChRIS Store with Redux, start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
 - Sprint 3(weeks 6&7): Create some unit for testing and ensuring redux can work correctly.
 
 - Sprint 4(weeks 8&9): Deploy the UI on the MOC and incorporate testing to validate functionality.
 
-- Sprint 5(from week9): Build a new front end component to visualize the MOC calculation reult.
+- Sprint 5(from week9): Build a new front end component to visualize the MOC calculation reults.
 
 More jobs needed to be added...
 
