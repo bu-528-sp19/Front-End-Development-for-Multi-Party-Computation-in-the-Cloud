@@ -5,14 +5,16 @@ import {
   Card, CardBody, Button, Alert,
   Form, FormGroup, FormControl,
 } from 'patternfly-react';
+import { connect } from 'react-redux';
 import StoreClient from '@fnndsc/chrisstoreapi';
 import './SignIn.css';
 import chrisLogo from '../../assets/img/chris_logo-white.png';
-import ChrisStore from '../../store/ChrisStore';
+import { HANDLE_SUBMIT } from '../../actions/types';
+
 
 export class SignIn extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.mounted = false;
     this.state = {
@@ -38,19 +40,25 @@ export class SignIn extends Component {
   }
 
   handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
   }
 
   handleSubmit(event) {
     const authURL = process.env.REACT_APP_STORE_AUTH_URL;
     const { username, password } = this.state;
     const { store } = this.props;
-
     this.setState({ loading: true });
     const promise = StoreClient.getAuthToken(authURL, username, password)
       .then((token) => {
-        store.set('userName')(username);
-        store.set('authToken')(token);
+        // store.set('userName')(username);
+        // store.set('authToken')(token);
+        const action = {
+          type: HANDLE_SUBMIT,
+          authToken: token,
+          userName: username,
+        };
+        store.dispatch(action);
         if (this.mounted) {
           this.setState({ toDashboard: true });
         }
@@ -164,8 +172,13 @@ export class SignIn extends Component {
   }
 }
 
-export default ChrisStore.withStore(SignIn);
 
 SignIn.propTypes = {
   store: PropTypes.objectOf(PropTypes.object).isRequired,
 };
+
+const mapStateToProps = state => ({
+  userName: state.userName,
+});
+
+export default connect(mapStateToProps)(SignIn);

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Button, Icon } from 'patternfly-react';
 import { Collapse } from 'react-bootstrap';
@@ -6,14 +7,14 @@ import { NavLink, Link } from 'react-router-dom';
 import Search from './components/Search/Search';
 import './Navbar.css';
 import LogoImg from '../../assets/img/chris-plugin-store_logo.png';
-import ChrisStore from '../../store/ChrisStore';
+
 
 export class Navbar extends Component {
-  constructor() {
-    super();
-
-    this.state = { open: false };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    };
     this.onSigninClick = this.onSigninClick.bind(this);
     this.toggleDropdown = this.toggleDropdown.bind(this);
     this.closeDropdown = this.closeDropdown.bind(this);
@@ -22,8 +23,8 @@ export class Navbar extends Component {
 
   onSigninClick() {
     const { store } = this.props;
-    if (store.get('isLoggedIn')) {
-      store.set('authToken')('');
+    if (store.getState().isLoggedIn) {
+      store.getState().isLoggedIn = '';
     }
   }
 
@@ -47,15 +48,16 @@ export class Navbar extends Component {
 
   render() {
     const { store } = this.props;
-    const isLoggedIn = store.get('isLoggedIn');
-    const loginText = isLoggedIn ? 'Sign out' : 'Sign in';
-    const dashboardLink = isLoggedIn ? (
+    const newState = store.getState();
+    this.state.isloggedIn = newState.isLoggedIn;
+    const loginText = this.state.isloggedIn ? 'Sign out' : 'Sign in';
+    const dashboardLink = this.state.isloggedIn ? (
       <li>
         <NavLink to="/dashboard" href="/dashboard">
-        Dashboard
+          Dashboard
         </NavLink>
       </li>) : '';
-    const dashboardDropdown = store.get('isLoggedIn') ? (
+    const dashboardDropdown = store.getState().isLoggedIn ? (
       <div className="navbar-btn-container">
         <NavLink
           to="/dashboard"
@@ -171,4 +173,9 @@ Navbar.defaultProps = {
   },
 };
 
-export default ChrisStore.withStore(Navbar);
+const mapStateToProps = state => ({
+  isLoggedIn: state.isLoggedIn,
+});
+
+export default connect(mapStateToProps)(Navbar);
+
