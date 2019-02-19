@@ -1,13 +1,12 @@
-import { createConnectedStore } from 'undux';
-import isEmpty from 'lodash/isEmpty';
-import effects from './ChrisEffects';
+import { createStore, applyMiddleware, compose } from 'redux';
+import rootReducer from '../reducers/index';
 
-// Declare your store's initial state.
-const initialState = {
-  userName: window.sessionStorage.getItem('USERNAME'),
-  authToken: window.sessionStorage.getItem('AUTH_TOKEN'),
-  isLoggedIn: !isEmpty(window.sessionStorage.getItem('AUTH_TOKEN')),
-};
+const middleware = [];
 
-// Create & export a store with an initial value.
-export default createConnectedStore(initialState, effects);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(...middleware)),
+);
+
+export default store;
