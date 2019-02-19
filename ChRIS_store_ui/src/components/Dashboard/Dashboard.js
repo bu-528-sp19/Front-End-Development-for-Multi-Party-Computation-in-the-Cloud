@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Button, CardGrid, Spinner } from 'patternfly-react';
 import PropTypes from 'prop-types';
 import StoreClient from '@fnndsc/chrisstoreapi';
@@ -6,7 +7,6 @@ import './Dashboard.css';
 import DashPluginCardView from './components/DashPluginCardView/DashPluginCardView';
 import DashTeamView from './components/DashTeamView/DashTeamView';
 import DashGitHubView from './components/DashGitHubView/DashGitHubView';
-import ChrisStore from '../../store/ChrisStore';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class Dashboard extends Component {
     const storeURL = process.env.REACT_APP_STORE_URL;
     const client = new StoreClient(storeURL);
     const searchParams = {
-      owner_username: store.get('userName'),
+      owner_username: store.getState().userName,
       limit: 1,
       offset: 0,
     };
@@ -60,7 +60,7 @@ class Dashboard extends Component {
   deletePlugin(pluginName) {
     const { store } = this.props;
     const storeURL = process.env.REACT_APP_STORE_URL;
-    const auth = { token: store.get('authToken') };
+    const auth = { token: store.getState().authToken };
     const client = new StoreClient(storeURL, auth);
 
     let response;
@@ -85,13 +85,11 @@ class Dashboard extends Component {
 
   render() {
     const { pluginList, loading } = this.state;
-    const { store } = this.props;
-    const userName = store.get('userName') || '';
     return (
       <React.Fragment>
         <div className="plugins-stats">
           <div className="row plugins-stats-row">
-            <div className="title-bar">{`Dashboard for ${userName}`}</div>
+            <div className="title-bar">Dashboard</div>
             <div className="dropdown btn-group">
               <Button bsStyle="primary" bsSize="large" href="/create">
                 Add Plugin
@@ -125,4 +123,9 @@ Dashboard.defaultProps = {
   store: {},
 };
 
-export default ChrisStore.withStore(Dashboard);
+
+const mapStateToProps = state => ({
+  authToken: state.authToken,
+  userName: state.userName,
+});
+export default connect(mapStateToProps)(Dashboard);

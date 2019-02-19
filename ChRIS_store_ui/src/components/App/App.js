@@ -1,16 +1,13 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import ConnectedSignIn from '../SignIn/SignIn';
-import Router from '../Router/Router';
-import ChrisStore from '../../store/ChrisStore';
-import './App.css';
+import store from '../../store/ChrisStore';
+
 
 // import the patternfly CSS globally
 import '../../../node_modules/patternfly/dist/css/patternfly.min.css';
 import '../../../node_modules/patternfly/dist/css/patternfly-additions.min.css';
 
+
 const App = () => (
-  <ChrisStore.Container>
+  <Provider store={store}>
     <div className="App">
       <BrowserRouter>
         <Switch>
@@ -19,7 +16,7 @@ const App = () => (
         </Switch>
       </BrowserRouter>
     </div>
-  </ChrisStore.Container>
+  </Provider>
 );
 
 export default App;

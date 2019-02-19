@@ -1,174 +1,184 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Icon } from 'patternfly-react';
-import { Collapse } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
-import Search from './components/Search/Search';
-import './Navbar.css';
-import LogoImg from '../../assets/img/chris-plugin-store_logo.png';
-import ChrisStore from '../../store/ChrisStore';
+import { Redirect, Link } from 'react-router-dom';
+import {
+  Card, CardBody, Button, Alert,
+  Form, FormGroup, FormControl,
+} from 'patternfly-react';
+import { connect } from 'react-redux';
+import StoreClient from '@fnndsc/chrisstoreapi';
+import './SignIn.css';
+import chrisLogo from '../../assets/img/chris_logo-white.png';
+import { HANDLE_SUBMIT } from '../../actions/types';
 
-export class Navbar extends Component {
-  constructor() {
-    super();
 
-    this.state = { open: false };
+export class SignIn extends Component {
+  constructor(props) {
+    super(props);
 
-    this.onSigninClick = this.onSigninClick.bind(this);
-    this.toggleDropdown = this.toggleDropdown.bind(this);
-    this.closeDropdown = this.closeDropdown.bind(this);
-    this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.mounted = false;
+    this.state = {
+      username: '',
+      password: '',
+      loading: false,
+      toDashboard: false,
+      error: null,
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.showError = this.showError.bind(this);
+    this.hideError = this.hideError.bind(this);
   }
 
-  onSigninClick() {
+  componentWillMount() {
+    this.mounted = true;
+  }
+
+  componentWillUnmount() {
+    this.mounted = false;
+  }
+
+  handleChange(event) {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  }
+
+  handleSubmit(event) {
+    const authURL = process.env.REACT_APP_STORE_AUTH_URL;
+    const { username, password } = this.state;
     const { store } = this.props;
-    if (store.get('isLoggedIn')) {
-      store.set('authToken')('');
-    }
+    this.setState({ loading: true });
+    const promise = StoreClient.getAuthToken(authURL, username, password)
+      .then((token) => {
+        // store.set('userName')(username);
+        // store.set('authToken')(token);
+        const action = {
+          type: HANDLE_SUBMIT,
+          authToken: token,
+          userName: username,
+        };
+        store.dispatch(action);
+        if (this.mounted) {
+          this.setState({ toDashboard: true });
+        }
+      })
+      .catch(() => {
+        this.showError('Invalid username or password');
+      })
+      .then(() => {
+        if (this.mounted) {
+          this.setState({ loading: false });
+        }
+      });
+
+    event.preventDefault();
+    return promise; // for tests
   }
 
-  toggleDropdown(e) {
-    // only toggle the dropdown if the button is not active
-    const isActive = e && e.target.className.indexOf('active') !== -1;
-    if (!isActive) {
-      this.setState(prevState => ({
-        open: !prevState.open,
-      }));
-    }
+  showError(message) {
+    this.setState({ error: message });
   }
 
-  closeDropdown() {
-    this.setState(() => ({ open: false }));
-  }
-
-  handleKeyPress(e) {
-    if (e.key === 'Enter') this.toggleDropdown();
+  hideError() {
+    this.setState({ error: null });
   }
 
   render() {
-    const { store } = this.props;
-    const isLoggedIn = store.get('isLoggedIn');
-    const loginText = isLoggedIn ? 'Sign out' : 'Sign in';
-    const dashboardLink = isLoggedIn ? (
-      <li>
-        <NavLink to="/dashboard" href="/dashboard">
-        Dashboard
-        </NavLink>
-      </li>) : '';
-    const dashboardDropdown = store.get('isLoggedIn') ? (
-      <div className="navbar-btn-container">
-        <NavLink
-          to="/dashboard"
-          href="/dashboard"
-          className="navbar-dropdown-btn"
-          onClick={this.toggleDropdown}
-        >
-          Dashboard
-        </NavLink>
-      </div>) : '';
+    const {
+      toDashboard, error, username, password, loading,
+    } = this.state;
+
+    if (toDashboard) {
+      return <Redirect to="/dashboard" />;
+    }
+
     return (
-      <header>
-        <nav className="navbar navbar-pf-vertical navbar-default">
-          <div className="navbar-row row">
-            <div className="navbar-header">
-              <NavLink
-                to="/"
-                href="/"
-                className="navbar-brand navbar-logo"
-                onClick={this.closeDropdown}
-                tabIndex="0"
-              >
-                <img
-                  className="navbar-logo-img"
-                  src={LogoImg}
-                  alt="ChRIS Plugin Store"
-                />
-              </NavLink>
-              <Search className="navbar-search" location={this.props.location} />
-              <div
-                className="navbar-trigger"
-                role="menuitem"
-                tabIndex="0"
-                onClick={this.toggleDropdown}
-                onKeyPress={this.handleKeyPress}
-              >
-                <Icon name="bars" />
+      <div className="signin login-pf-page">
+        <div className="signin-container">
+          {
+            error && (
+              <div className="signin-error-container">
+                <Alert
+                  className="signin-error"
+                  type="error"
+                  onDismiss={this.hideError}
+                >
+                  {error}
+                </Alert>
               </div>
-            </div>
-            <div className="navbar-collapse collapse">
-              <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <Link to="/signin" href="/signin" className="navbar-signin-btn-link">
-                    <Button className="navbar-signin-btn" bsStyle="info" bsSize="large" onClick={this.onSigninClick}>
-                      {loginText}
-                    </Button>
-                  </Link>
-                </li>
-              </ul>
-              <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <NavLink to="/plugins" href="/plugins" className="navbar-plugins-btn">
-                    Plugins
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/developers" href="/developers" className="navbar-developers-btn">
-                    Developers
-                  </NavLink>
-                </li>
-                {dashboardLink}
-              </ul>
-            </div>
+            )
+          }
+          <div className="signin-logo-container">
+            <Link
+              className="signin-logo-link"
+              href="/"
+              to="/"
+            >
+              <img
+                className="signin-logo"
+                src={chrisLogo}
+                alt=""
+              />
+            </Link>
           </div>
-        </nav>
-        <Collapse in={this.state.open} className="navbar-dropdown">
-          <div className="navbar-dropdown-container">
-            <div className="navbar-btn-container">
-              <NavLink
-                to="/plugins"
-                href="/plugins"
-                className="navbar-dropdown-btn"
-                onClick={this.toggleDropdown}
-              >
-                Plugins
-              </NavLink>
-            </div>
-            <div className="navbar-btn-container">
-              <NavLink
-                to="/developers"
-                href="/developers"
-                className="navbar-dropdown-btn"
-                onClick={this.toggleDropdown}
-              >
-                Developers
-              </NavLink>
-            </div>
-            {dashboardDropdown}
-            <div className="navbar-btn-container">
-              <Link to="/signin" href="/signin" className="navbar-signin-dropdown-btn-link">
-                <Button className="navbar-signin-dropdown-btn" bsStyle="info" bsSize="large" onClick={this.onSigninClick}>
-                  {loginText}
+          <Card className="signin-card">
+            <header className="login-pf-page-header">
+              <h1>Login to your account</h1>
+            </header>
+            <CardBody>
+              <Form className="signin-form" onSubmit={this.handleSubmit}>
+                <FormGroup className="signin-username-form-group" bsSize="large">
+                  <FormControl
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    value={username}
+                    onChange={this.handleChange}
+                    autoComplete="username"
+                  />
+                </FormGroup>
+                <FormGroup className="signin-password-form-group" bsSize="large">
+                  <FormControl
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={this.handleChange}
+                    autoComplete="current-password"
+                  />
+                </FormGroup>
+                <Button
+                  className="signin-login-btn"
+                  bsStyle="primary"
+                  bsSize="large"
+                  type="submit"
+                  disabled={loading}
+                >
+                  Log In
                 </Button>
-              </Link>
-            </div>
-          </div>
-        </Collapse>
-      </header>
+                <p className="login-pf-signup">
+                  Need an account?
+                  <Link to="/developers" href="/developers">
+                    Signup
+                  </Link>
+                </p>
+              </Form>
+            </CardBody>
+          </Card>
+        </div>
+      </div>
     );
   }
 }
 
-Navbar.propTypes = {
+
+SignIn.propTypes = {
   store: PropTypes.objectOf(PropTypes.object).isRequired,
-  location: PropTypes.shape({
-    search: PropTypes.string,
-  }),
 };
 
-Navbar.defaultProps = {
-  location: {
-    search: '',
-  },
-};
+const mapStateToProps = state => ({
+  userName: state.userName,
+});
 
-export default ChrisStore.withStore(Navbar);
+export default connect(mapStateToProps)(SignIn);
