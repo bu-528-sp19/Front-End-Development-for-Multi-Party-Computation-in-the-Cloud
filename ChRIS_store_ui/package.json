@@ -1,0 +1,61 @@
+{
+  "name": "chris_store_ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "lint": "eslint ./src/components",
+    "lint:fix": "eslint --fix ./src/components",
+    "ci": "concurrently --kill-others-on-fail \"npm:test\" \"npm:lint\"",
+    "serve": "node serve.js",
+    "deploy": "npm run build && npm run serve",
+    "precommit": "lint-staged",
+    "test:staged": "cross-env CI=true react-scripts test --env=jsdom --findRelatedTests"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add",
+      "npm run test:staged"
+    ]
+  },
+  "dependencies": {
+    "@fnndsc/chrisstoreapi": "^1.1.2",
+    "classnames": "^2.2.6",
+    "core-js": "^2.5.7",
+    "email-validator": "^2.0.4",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "patternfly": "^3.58.0",
+    "patternfly-react": "^2.24.0",
+    "prop-types": "^15.6.2",
+    "react": "16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-clipboard.js": "^2.0.0",
+    "react-dom": "16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "recompose": "^0.30.0",
+    "rxjs": "^6.3.3",
+    "sortabular": "^1.6.0",
+    "table-resolver": "^4.1.1",
+    "undux": "^5.0.0-beta.18"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "react-test-renderer": "^16.4.1"
+  }
+}
