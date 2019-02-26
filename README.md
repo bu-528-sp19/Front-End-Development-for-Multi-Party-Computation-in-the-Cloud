@@ -77,26 +77,27 @@ To better understand the mechanism of Redux, we will using Redux to upgrade the 
 Minimum Viable Product:
 - Update the Chris-store UI by replacing the Undux with Redux.
 - Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
-- Understand the multiparty computation structure, implement some components to optimize the front end to help users search data faster. 
+- Understand the multiparty computation structure, implement some components to optimize the front end to help users retrive data faster.
+- Deploy UI to MOC and scale test in the MOC.
 
 Potential stretch goals:  
 - Get page response time down
 - Visualization of brain volume results.
-- Deploy UI to MOC and scale test in the MOC.
+
 
 ## 6. Release Planning
 
 Until February 6 2019, the MPC API hasn't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
 
-- Sprint 1(weeks 2&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat. Practice how to implement Redux by updating the Chris-store UI by using Redux. 
+- Sprint 1(weeks 1&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat. Practice how to implement Redux by updating the Chris-store UI by using Redux. 
 
-- Sprint 2(weeks 4&5): Re-write ChRIS Store with Redux, start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
+- Sprint 2(weeks 4&6): Re-write ChRIS Store with Redux, start implementing redux for the ChRIS UI, take all backend objects and populate them into the cache and make them available.
 
-- Sprint 3(weeks 6&7): Create some unit for testing and ensuring redux can work correctly.
+- Sprint 3(weeks 7&8): Create some unit for testing and ensuring redux can work correctly.
 
-- Sprint 4(weeks 8&9): Deploy the UI on the MOC and incorporate testing to validate functionality.
+- Sprint 4(weeks 9&10): Deploy the UI on the MOC and incorporate testing to validate functionality.
 
-- Sprint 5(from week9): Build a new front end component to visualize the MOC calculation reults.
+- Sprint 5(from week11): Deply a copy of ChRIS back-end to the MOC, using openshift and openstack. Build a new front end component to visualize the MOC calculation reults.
 
 More jobs needed to be added...
 
