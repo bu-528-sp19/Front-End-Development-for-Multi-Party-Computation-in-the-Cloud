@@ -26,7 +26,6 @@ The front-end will deliver:
 * Performance improvement: The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale.
 * Extensibility: Provides an extendable interface that allows third-party service plugin.
 * Security: The data which is passed into systems from one institution cannot be accessed by another institution.
-* The multi-party-computation feature will come after February.
 
 The front-end will not deliver:
 * Image processing functions are provided by the ChRIS APIs, not the front end module.
