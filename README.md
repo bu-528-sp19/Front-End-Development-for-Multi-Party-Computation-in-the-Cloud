@@ -43,12 +43,6 @@ This diagram gives a brief overview of the ChRIS platform.
 * The ChRIS Store is an autonomous unit includes both front-end and back-end. ChRIS store 
 * More work needed to be added... 
 
-### Global Architectural Structure Of ChRIS:
-
-<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/chris-arch-os.png"></div>
-
-* This diagram provides a deeper dive showing how ChRIS resides within Boston Children’s Hospital, sending the data to MOC specifically to an IO handler within OpenShift. The data is then stored inside of Swift within OpenStack. This is to enable the segmentation of data between jobs. The OpenShift process manager processes the plugin-container from ChRIS and launches it into a job starting with an init container that pulls the data out of Swift and makes it available for the image plugin container, which passes its result to a publish container that passes the data to Swift, and the IO Handler passes the output data back to ChRIS.
-
 ### Design Implications and Discussion
 Key design decisions and motivation behind them:  
 - Improve data performance by Redux:  
@@ -60,16 +54,6 @@ Below is the React component structure without Redux and with Redux
 The main component in Redux is store, actionCreator and reducer. We are also highly considerly using middlewares(between the framework receiving a request, and the framework generating a response, provides a third-party extension point between dispatching an action, and the moment it reaches the reducer)like [Redux-thunk](https://github.com/reduxjs/redux-thunk) or [Redux-soga](https://github.com/redux-saga/redux-saga) to realize asynchronous API calls, like AJAX calls to communicate with backend.   So if we use the Redux to implement and connect the MOC, it will be much more efficient by connecting the UI and MOC with a store to control all the functional component and make it easier when we want to modify the component.It's time-saving for not only the time for UI itself but also for our own implementing.
 
 <div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="300"></div>
-
-- Look at replacing [Undux](https://undux.org/) with Redux:
-
-To better understand the mechanism of Redux, we will using Redux to upgrade the ChRIS Store, which is written by Undex. Undux is a simple & typesafe alternative to Flux and Redux, it is used to manage state and data for ReactJS applications of all sizes. Below is the comparison between Redux and Undux.
-
-| Tables        | Redux         | Undux |
-|:-------------:|-------------|-----|
-| Speed      | Globs of boilerplate which slows down engineering | Near-zero boilerplate which enables rapid iteration |
-| Trace | Actions, creators, types, reducers, callers spread all across lots of files which makes it harder to trace code   |   Do everything right in your view |
-| Safety | Really hard to type-safely      |    100% typesafe |
 
 
 ## 5. Acceptance criteria
