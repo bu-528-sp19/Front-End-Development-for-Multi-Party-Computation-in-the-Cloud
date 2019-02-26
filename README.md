@@ -2,7 +2,7 @@
 
 ## 1. Vision and Goals
 
-The project is the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs). The ChRIS front end is not only a simple front end project, it is a bridge to communicate between ChRIS user, ChRIS Store[3] and Multi-Party-Computation(MPC) API. This project enables users who are not familiar with image processing able to process the medical image with a single click. After the front end released, the whole ChRIS platform can dramatically improve the scale and efficiency of healthcare image processing applications. Nowadays, some of the image processing progress can take more than 10 hours, but ChRIS platform can reduct this to a few minutes[2]. What's more, the ChRIS platform can be developed into an ecosystem, any researcher can create and recreate their image processing tools anywhere.
+The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).
 
 ## 2. Users/Personas Of The Project
 Basically, the target users are:  
