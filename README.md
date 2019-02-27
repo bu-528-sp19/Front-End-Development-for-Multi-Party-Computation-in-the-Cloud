@@ -80,7 +80,7 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 
 - Sprint 4(weeks 9&10): Deploy the UI on the MOC and incorporate testing to validate functionality.
 
-- Sprint 5(from week11): Deply a copy of ChRIS back-end to the MOC, using openshift and openstack. Build a new front end component to visualize the MOC calculation reults.
+- Sprint 5(from week11): Deploy a copy of ChRIS back-end to the MOC using openshift and openstack. Build a new front end component to visualize the MOC calculation reults.
 
 More jobs needed to be added...
 
