@@ -76,7 +76,7 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 
 - Sprint 2(weeks 4&6): Start implementing redux for the ChRIS UI, create a definition file of Typescript for ChRIS API, start to test the backend of ChRIS UI and take all backend objects and populate them into the cache and make them available.
 
-- Sprint 3(weeks 7&8): Create some unit for testing and ensuring redux can work correctly.
+- Sprint 3(weeks 7&8): Conducting some unit test using jest on ChRIS API to ensure that redux and whole project can work correctly.
 
 - Sprint 4(weeks 9&10): Deploy the UI on the MOC and incorporate testing to validate functionality.
 
