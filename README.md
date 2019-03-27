@@ -1,6 +1,6 @@
 # Fron-End Development for Multi-Party-Computation in the Cloud
 
-# Our code are pulled to the ChRIS main branch directly, to see the code:
+## Our code are pulled to the ChRIS main branch directly, to see the code:
 
 - For sprint1, we rewrite ChRIS_Store_UI using redux and delete some redundant units. 
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_store_ui/pull/49/files)
