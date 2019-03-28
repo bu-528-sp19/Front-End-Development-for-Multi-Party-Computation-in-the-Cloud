@@ -88,7 +88,7 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 
 - Sprint 3(weeks 7&8): Conducting some unit test using jest on ChRIS API to ensure that redux and whole project can work correctly.
 
-- Sprint 4(weeks 9&10): Deploy the UI on the MOC and incorporate testing to validate functionality.
+- Sprint 4(weeks 9&10): Deploy the ChRIS store on the MOC using Openshift and incorporate testing to validate functionality.
 
 - Sprint 5(from week11): Deploy a copy of ChRIS back-end to the MOC using openshift and openstack. Build a new front end component to visualize the MOC calculation reults.
 
