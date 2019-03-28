@@ -12,7 +12,10 @@
 
 ## 1. Vision and Goals
 
-The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).
+The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).  
+Our goal is to 
+- Design a front-end interface using React & Redux.
+- Receive the input from the user and send the result from MOC to the users.
 
 ## 2. Users/Personas Of The Project
 Basically, the target users are:  
