@@ -8,7 +8,10 @@
   - The pull request is [here](https://github.com/rebecabkerr/ChRIS_ui/pull/5/files)
 - For sprint3, we write unit test using JEST to test ChRIS's API, action, and reducer.
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/10/files)
-- Sprint4 is pending
+- For Sprint4, we fixed and optimized unit test scripts and deployed the Chris Store to the MOC using Openshift S2I
+  - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/20)
+  - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari or Edge to access the webpage)
+- Sprint 5 is pending
 
 ## 1. Vision and Goals
 
@@ -95,11 +98,10 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 
 - Sprint 3(weeks 7&8): Conducting some unit test using jest on ChRIS API to ensure that redux and whole project can work correctly.
 
-- Sprint 4(weeks 9&10): Deploy the ChRIS store on the MOC using Openshift and incorporate testing to validate functionality.
+- Sprint 4(weeks 9&10): Deploy the ChRIS Store on the MOC using Openshift and incorporate testing to validate functionality.
 
-- Sprint 5(from week11): Deploy a copy of ChRIS back-end to the MOC using openshift and openstack. Build a new front end component to visualize the MOC calculation reults.
+- Sprint 5(from week11): Deploy the backend of ChRIS Store and track the website traffic.
 
-More jobs needed to be added...
 
 #### Reference
 - [1] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
