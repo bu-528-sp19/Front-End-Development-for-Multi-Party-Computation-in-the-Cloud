@@ -81,7 +81,7 @@ Minimum Viable Product:
 - Update the Chris-store UI by replacing the Undux with Redux.
 - Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
 - Understand the multiparty computation structure, implement some components to optimize the front end to help users retrive data faster.
-- Deploy UI to MOC and scale test in the MOC.
+- Deploy ChRIS store to MOC using Openshift and scale test in the MOC.
 
 Potential stretch goals:  
 - Get page response time down
