@@ -100,7 +100,7 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 
 - Sprint 4(weeks 9&10): Deploy the ChRIS Store on the MOC using Openshift and incorporate testing to validate functionality.
 
-- Sprint 5(from week11): Deploy the backend of ChRIS Store and track the website traffic.
+- Sprint 5(from week11): Deploy the backend of ChRIS Store and track and test the website traffic using Apache JMeter.
 
 
 #### Reference
