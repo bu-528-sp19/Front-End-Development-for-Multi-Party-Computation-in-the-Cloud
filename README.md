@@ -77,9 +77,9 @@ When compared Javascript with Typescript, JavaScript is not able to fulfill the 
 Jest is the Javascript test framework we used in our testing. We using Jest to test our Redux code which includes actions and reducers. In detail, we test the ChRIS API in actions and reducers in order to make sure that ChRIS API works properly.
 - Apache JMeter
 Apache JMeter is a open source software to designed to load test functional behavior and measure performance.  
-Test Static and dynamic resources
-Test Web dynamic applications
-Simulate a heavy load to analyze website performance under different load types
+* Test Static and dynamic resources
+* Test Web dynamic applications
+* Simulate a heavy load to analyze website performance under different load types
 
 
 ## 5. Acceptance criteria
