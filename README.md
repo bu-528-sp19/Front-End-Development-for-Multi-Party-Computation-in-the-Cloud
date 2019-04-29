@@ -11,7 +11,9 @@
 - For Sprint4, we fixed and optimized unit test scripts and deployed the Chris Store to the MOC using Openshift S2I
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/20)
   - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari or Edge to access the webpage)
-- Sprint 5 is pending
+- For Sprint5
+  - Deploy the backend of Chris Store to MOC by using Openshift
+  - Monitor the traffic of website by using the Jmeter, do the pressure test
 
 ## 1. Vision and Goals
 
@@ -75,12 +77,15 @@ The main component in Redux is store, actionCreator and reducer. We are also hig
 When compared Javascript with Typescript, JavaScript is not able to fulfill the requirement of object-oriented programming, Typescript is much more object-oriented language and we want to migrate from Javascript to Typescript to fulfill the goal of type-safe action. Only we need to do in our project is that we create some declaration files in our Redux code to check Redux action when running the ChRIS UI.
 - Jest  
 Jest is the Javascript test framework we used in our testing. We using Jest to test our Redux code which includes actions and reducers. In detail, we test the ChRIS API in actions and reducers in order to make sure that ChRIS API works properly.
-* Apache JMeter
+- Apache JMeter
 Apache JMeter is a open source software to designed to load test functional behavior and measure performance. It can:  
   * Test Static and dynamic resources
   * Test Web dynamic applications
   * Simulate a heavy load to analyze website performance under different load types
-
+  * Track the Response time, throughput of the request test
+- Deployment to MOC
+  * frontend: our frontend was built through nodejs, so we build a nodejs application in the cource project. By giving the github source of our frontend, the openshift will package the application into docker image through S2i process. And we need to define and specify the dependencies and port of the app to connect it to the MOC, and point the frontend to the backend of Chris Store.
+  * Backend: our backend is a Python app. So we need to build 3 basic file for openshift deployment: requirement.txt, manage.py, wisg.py. And because of the application need to use "mkdir", so we need to build an account to have the SCC to get the permission of building folders.
 
 ## 5. Acceptance criteria
 Minimum Viable Product:
