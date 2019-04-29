@@ -9,7 +9,7 @@
 - For sprint3, we write unit test using JEST to test ChRIS's API, action, and reducer.
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/10/files)
 - For Sprint4, we fixed and optimized unit test scripts and deployed the Chris Store to the MOC using Openshift S2I
-  - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/20)
+  - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/20), [here](https://github.com/FNNDSC/ChRIS_ui/pull/21)
   - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari or Edge to access the webpage)
 - For Sprint5
   - Deploy the backend of Chris Store to MOC by using Openshift
