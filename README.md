@@ -2,16 +2,16 @@
 
 ## Our code are pulled to the ChRIS main branch directly, to see the code:
 
-- For sprint1, we rewrite ChRIS_Store_UI using redux and delete some redundant units. 
+- For sprint 1, we rewrite ChRIS_Store_UI using redux and delete some redundant units. 
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_store_ui/pull/49/files)
-- For sprint2, we write the ChRIS's type declaration using TypeScript.
+- For sprint 2, we write the ChRIS's type declaration using TypeScript.
   - The pull request is [here](https://github.com/rebecabkerr/ChRIS_ui/pull/5/files)
-- For sprint3, we write unit test using JEST to test ChRIS's API, action, and reducer.
+- For sprint 3, we write unit test using JEST to test ChRIS's API, action, and reducer.
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/10/files)
-- For Sprint4, we fixed and optimized unit test scripts and deployed the Chris Store to the MOC using Openshift S2I
+- For Sprint 4, we fixed and optimized unit test scripts and deployed the Chris Store to the MOC using Openshift S2I
   - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/20), [here](https://github.com/FNNDSC/ChRIS_ui/pull/21)
   - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari or Edge to access the webpage)
-- For Sprint5
+- For Sprint 5
   - Deploy the backend of Chris Store to MOC by using Openshift
   - Monitor the traffic of website by using the Jmeter, do the pressure test
 
@@ -20,6 +20,7 @@
 The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).  
 Our goal is to: 
 - Design a front-end interface using React & Redux.
+- Deploy ChRIS store backend and frontend to MOC using Openshift.
 - Receive the input from the user and send the input to MOC for computation and show visualized result for the users.
 
 ## 2. Users/Personas Of The Project
