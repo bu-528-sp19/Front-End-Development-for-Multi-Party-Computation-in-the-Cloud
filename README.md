@@ -41,7 +41,7 @@ $ npm start
     - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/10/files)
   - For Sprint 4, we fixed and optimized unit test scripts and deployed the Chris Store to the MOC using Openshift S2I
     - The pull request is [here](https://github.com/FNNDSC/ChRIS_ui/pull/20), [here](https://github.com/FNNDSC/ChRIS_ui/pull/21)
-    - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari or Edge to access the webpage)
+    - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari, FireFox or Edge to access the webpage, the website doesn't support Chrome)
   - For Sprint 5
     - Deploy the backend of Chris Store to MOC by using Openshift
     - Monitor the traffic of website using Jmeter, do the pressure test
