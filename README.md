@@ -13,7 +13,26 @@
   - The deployed webpage is [here](http://chris-store-demo-bu528-ui-for-cloud-mpc.k-apps.osh.massopen.cloud/plugins)(Please use Safari or Edge to access the webpage)
 - For Sprint 5
   - Deploy the backend of Chris Store to MOC by using Openshift
-  - Monitor the traffic of website by using the Jmeter, do the pressure test
+  - Monitor the traffic of website using Jmeter, do the pressure test
+
+## Installation
+
+### Install ChRIS Store Frontend
+- To install the ChRIS Store, run the following commands in terminal:
+```bash
+$> git clone https://github.com/FNNDSC/ChRIS_store_ui
+$> cd ChRIS_store_ui
+$> yarn install
+$> yarn build
+$> yarn serve
+```
+- You can now access the ChRIS Store frontend in http://localhost:3000/
+
+### Deploy ChRIS Store Backend
+- To deploy the backend of ChRIS Store, Login to the MOC Openshift Dashboard.
+- Create a Node.js project.
+- Choose the project you want to add and give a name to the application.
+- For the Git Repository, input `https://github.com/FNNDSC/ChRIS_store.git`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
 
 ## 1. Vision and Goals
 
