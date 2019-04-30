@@ -30,6 +30,12 @@ $ npm start
 ```
 - You can now access the ChRIS Store frontend in http://localhost:3000/
 
+### Deploy ChRIS Frontend
+- To deploy the frontend of ChRIS Store, Login to the MOC Openshift Dashboard.
+- Create a Node.js project.
+- Choose the project you want to add and give a name to the application.
+- For the Git Repository, input `https://github.com/FNNDSC/ChRIS_ui.git`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
+
 ## Project Code
 - Our code are pulled to the ChRIS main branch directly, to see the code:
 
