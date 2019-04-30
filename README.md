@@ -13,11 +13,14 @@ $> yarn serve
 ```
 - You can now access the ChRIS Store frontend in http://localhost:3000/
 
-### Deploy ChRIS Store Backend
-- To deploy the backend of ChRIS Store, Login to the MOC Openshift Dashboard.
+### Deploy ChRIS Store Frontend
+- To deploy the frontend of ChRIS Store, Login to the MOC Openshift Dashboard.
 - Create a Node.js project.
 - Choose the project you want to add and give a name to the application.
-- For the Git Repository, input `https://github.com/FNNDSC/ChRIS_store.git`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
+- For the Git Repository, input `https://github.com/FNNDSC/ChRIS_store_ui.git`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
+
+### Install ChRIS UI
+- 
 
 ## Project Code
 - Our code are pulled to the ChRIS main branch directly, to see the code:
@@ -34,6 +37,8 @@ $> yarn serve
   - For Sprint 5
     - Deploy the backend of Chris Store to MOC by using Openshift
     - Monitor the traffic of website using Jmeter, do the pressure test
+    
+## Project Introduction
     
 ## 1. Vision and Goals
 
