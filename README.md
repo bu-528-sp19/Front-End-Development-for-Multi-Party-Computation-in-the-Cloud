@@ -123,6 +123,8 @@ Apache JMeter is a open source software to designed to load test functional beha
   * Test Web dynamic applications
   * Simulate a heavy load to analyze website performance under different load types
   * Track the Response time, throughput of the request test
+  
+We use Apache JMeter to test our ChRIS store which is deployed in MOC related to performance and response time . 
 - Deployment to MOC
   * Frontend: our frontend was built through nodejs, so we build a nodejs application in the cource project. By giving the github source of our frontend, the openshift will package the application into docker image through S2i process. And we need to define and specify the dependencies and port of the app to connect it to the MOC, and point the frontend to the backend of Chris Store.
   * Backend: our backend is a Python app. So we need to build 3 basic file for openshift deployment: requirement.txt, manage.py, wisg.py. And because of the application need to use "mkdir", so we need to build an account to have the SCC to get the permission of building folders.
