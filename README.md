@@ -5,11 +5,11 @@
 ### Install ChRIS Store Frontend
 - To install the ChRIS Store, run the following commands in terminal:
 ```bash
-$> git clone https://github.com/FNNDSC/ChRIS_store_ui
-$> cd ChRIS_store_ui
-$> yarn install
-$> yarn build
-$> yarn serve
+$ git clone https://github.com/FNNDSC/ChRIS_store_ui
+$ cd ChRIS_store_ui
+$ yarn install
+$ yarn build
+$ yarn serve
 ```
 - You can now access the ChRIS Store frontend in http://localhost:3000/
 
@@ -54,7 +54,7 @@ $ npm start
     
 ## Project Introduction
     
-## 1. Vision and Goals
+### 1. Vision and Goals
 
 The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).  
 Our goal is to: 
@@ -62,7 +62,7 @@ Our goal is to:
 - Deploy ChRIS store backend and frontend to MOC using Openshift.
 - Receive the input from the user and send the input to MOC for computation and show visualized result for the users.
 
-## 2. Users/Personas Of The Project
+### 2. Users/Personas Of The Project
 Basically, the target users are:  
 * Medical/neuroscience researchers focusing on the analysis of brain imaging.  
 * Specifically targets are researchers interested in comparing the volumes of specific brain structures across different groups of patients at different medical institutions. 
@@ -78,7 +78,7 @@ Administrators versus end users want
 * The administrators on each institution site want to remain in compliance with laws, particularly regarding the sharing of patient data. They'd like to enable sharing to help the researchers make new discoveries, but also comply with laws and maintain patient privacy.
 * The administrators also want - probably - the processing to happen efficiently and not gobble up too many resources / hog the system/cost too much processing time/power/money  
 
-## 3. Scope and Features
+### 3. Scope and Features
 The front-end will deliver:
 * Privacy: Each user has their unique credentials.
 * Performance improvement: The ChRIS will be dealing with a lot of data, so the data should be fetched as few as possible but enough so that the user isn’t hindered by showing data that is stale.
@@ -89,7 +89,7 @@ The front-end will not deliver:
 * Image processing functions are provided by the ChRIS APIs, not the front end module.
 * The MPC is not included in the front end. Instead, the front end will call the MPC API directly.
 
-## 4. Solution Concept
+### 4. Solution Concept
 
 ### ChRIS Detail Diagram:
 
@@ -127,7 +127,7 @@ Apache JMeter is a open source software to designed to load test functional beha
   * Frontend: our frontend was built through nodejs, so we build a nodejs application in the cource project. By giving the github source of our frontend, the openshift will package the application into docker image through S2i process. And we need to define and specify the dependencies and port of the app to connect it to the MOC, and point the frontend to the backend of Chris Store.
   * Backend: our backend is a Python app. So we need to build 3 basic file for openshift deployment: requirement.txt, manage.py, wisg.py. And because of the application need to use "mkdir", so we need to build an account to have the SCC to get the permission of building folders.
 
-## 5. Acceptance criteria
+### 5. Acceptance criteria
 Minimum Viable Product:
 - Update the Chris-store UI by replacing the Undux with Redux.
 - Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
@@ -140,7 +140,7 @@ Potential stretch goals:
 - Deploy the ChRIS Store backend to MOC
 
 
-## 6. Release Planning
+### 6. Release Planning
 
 Until February 6 2019, the MPC API hasn't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
 
