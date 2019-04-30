@@ -20,7 +20,15 @@ $> yarn serve
 - For the Git Repository, input `https://github.com/FNNDSC/ChRIS_store_ui.git`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
 
 ### Install ChRIS UI
-- 
+- To install the ChRIS Store, run the following commands in terminal:
+
+```
+$ git clone https://github.com/FNNDSC/ChRIS_ui.git
+$ cd ChRIS_ui
+$ npm install
+$ npm start
+```
+- You can now access the ChRIS Store frontend in http://localhost:3000/
 
 ## Project Code
 - Our code are pulled to the ChRIS main branch directly, to see the code:
