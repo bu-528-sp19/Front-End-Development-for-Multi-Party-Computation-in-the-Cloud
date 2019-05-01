@@ -30,7 +30,7 @@ $ npm start
 ```
 - You can now access the ChRIS Store frontend in http://localhost:3000/
 
-### Deploy ChRIS Frontend
+### Deploy ChRIS backend
 - To deploy the frontend of ChRIS Store, Login to the MOC Openshift Dashboard.
 - Create a Node.js project.
 - Choose the project you want to add and give a name to the application.
@@ -114,7 +114,7 @@ The main component in Redux is store, actionCreator and reducer. We are also hig
 <div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="300"></div>
 
 - Typescript declaration file  
-When compared Javascript with Typescript, JavaScript is not able to fulfill the requirement of object-oriented programming, Typescript is much more object-oriented language and we want to migrate from Javascript to Typescript to fulfill the goal of type-safe action. Only we need to do in our project is that we create some declaration files in our Redux code to check Redux action when running the ChRIS UI.
+When compared Javascript with Typescript, JavaScript is not able to fulfill the requirement of object-oriented programming, Typescript is much more object-oriented language and we want to migrate from Javascript to Typescript to fulfill the goal of type-safe action. Only we need to do in our project is that we create some declaration files in our source code to check Redux action when running the ChRIS UI.
 - Jest  
 Jest is the Javascript test framework we used in our testing. We using Jest to test our Redux code which includes actions and reducers. In detail, we test the ChRIS API in actions and reducers in order to make sure that ChRIS API works properly.
 - Apache JMeter   
@@ -123,7 +123,7 @@ Apache JMeter is a open source software to designed to load test functional beha
   * Test Web dynamic applications
   * Simulate a heavy load to analyze website performance under different load types
   * Track the Response time, throughput of the request test
-We use Apache JMeter to test our ChRIS store which is deployed in MOC related to performance and response time . 
+We use Apache JMeter to test our ChRIS store which is deployed in MOC related to performance and response time. We also try to test ChRIS store performance by creating different numbers of plugins. 
 - Deployment to MOC
   * Frontend: our frontend was built through nodejs, so we build a nodejs application in the cource project. By giving the github source of our frontend, the openshift will package the application into docker image through S2i process. And we need to define and specify the dependencies and port of the app to connect it to the MOC, and point the frontend to the backend of Chris Store.
   * Backend: our backend is a Python app. So we need to build 3 basic file for openshift deployment: requirement.txt, manage.py, wisg.py. And because of the application need to use "mkdir", so we need to build an account to have the SCC to get the permission of building folders.
@@ -132,13 +132,13 @@ We use Apache JMeter to test our ChRIS store which is deployed in MOC related to
 Minimum Viable Product:
 - Update the Chris-store UI by replacing the Undux with Redux.
 - Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
-- Understand the multiparty computation structure, implement some components to optimize the front end to help users retreive data faster.
+- Using Jest to 
 - Deploy ChRIS store frontend to MOC using Openshift and scale test in the MOC.
 
 Potential stretch goals:  
-- Get page response time down
-- Implement Apache JMeter to track the website traffic
-- Deploy the ChRIS Store backend to MOC
+- Deploy the ChRIS Store backend to MOC.
+- Implement Apache JMeter to track the website traffic and do some scale test.
+- Compares ChRIS store performance with different numbers of plugins which are in the backend.
 
 
 ### 6. Release Planning
