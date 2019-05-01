@@ -132,7 +132,7 @@ We use Apache JMeter to test our ChRIS store which is deployed in MOC related to
 Minimum Viable Product:
 - Update the Chris-store UI by replacing the Undux with Redux.
 - Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
-- Understand the multiparty computation structure, implement some components to optimize the front end to help users retrive data faster.
+- Understand the multiparty computation structure, implement some components to optimize the front end to help users retreive data faster.
 - Deploy ChRIS store frontend to MOC using Openshift and scale test in the MOC.
 
 Potential stretch goals:  
