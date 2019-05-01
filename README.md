@@ -115,9 +115,13 @@ The main component in Redux is store, actionCreator and reducer. We are also hig
 <div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="300"></div>
 
 - Typescript declaration file  
-When compared Javascript with Typescript, JavaScript is not able to fulfill the requirement of object-oriented programming, Typescript is much more object-oriented language and we want to migrate from Javascript to Typescript to fulfill the goal of type-safe action. Only we need to do in our project is that we create some declaration files in our source code to check Redux action when running the ChRIS UI.
+* JavaScript is not able to fulfill the requirement of object-oriented programming, Typescript is much more object-oriented language 
+* We want to migrate from Javascript to Typescript to fulfill the goal of type-safe action. 
+* Create some declaration files in our source code to fulfill our goal
 - Jest  
-Jest is the Javascript test framework we used in our testing. We using Jest to test our Redux code which includes actions and reducers. In detail, we test the ChRIS API in actions and reducers in order to make sure that ChRIS API works properly.
+* Jest is the Javascript test framework we used in our testing. 
+* We using Jest to test our Redux code which includes actions and reducers. 
+* In detail, we test the ChRIS API in actions and reducers in order to make sure that ChRIS API works properly.
 - Apache JMeter   
 Apache JMeter is a open source software to designed to load test functional behavior and measure performance. It can:  
   * Test Static and dynamic resources
