@@ -110,16 +110,16 @@ Below is the React component structure without Redux and with Redux
 <div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.png" height = "400"></div>
 
 - Redux component and workflow:  
-The main component in Redux is store, actionCreator and reducer. We are also highly considerly using middlewares(between the framework receiving a request, and the framework generating a response, provides a third-party extension point between dispatching an action, and the moment it reaches the reducer)like [Redux-thunk](https://github.com/reduxjs/redux-thunk) or [Redux-soga](https://github.com/redux-saga/redux-saga) to realize asynchronous API calls, like AJAX calls to communicate with backend.   So if we use the Redux to implement and connect the MOC, it will be much more efficient by connecting the UI and MOC with a store to control all the functional component and make it easier when we want to modify the component.It's time-saving for not only the time for UI itself but also for our own implementing.
+The main component in Redux is store, action creator and reducer. We are also highly considerly using middlewares(between the framework receiving a request, and the framework generating a response, provides a third-party extension point between dispatching an action, and the moment it reaches the reducer)like [Redux-thunk](https://github.com/reduxjs/redux-thunk) or [Redux-soga](https://github.com/redux-saga/redux-saga) to realize asynchronous API calls, like AJAX calls to communicate with backend.   So if we use the Redux to implement and connect the MOC, it will be much more efficient by connecting the UI and MOC with a store to control all the functional component and make it easier when we want to modify the component.It's time-saving for not only the time for UI itself but also for our own implementing.
 
 <div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/redux.gif" height="300"></div>
 
 - Typescript declaration file  
   * JavaScript is not able to fulfill the requirement of object-oriented programming, Typescript is much more object-oriented language 
   * We want to migrate from Javascript to Typescript to fulfill the goal of type-safe action. 
-  * Create some declaration files in our source code to fulfill our goal
+  * Create some declaration files in our source code to fulfill our goal.
 - Jest  
-  * Jest is the Javascript test framework we used in our testing. 
+  * Jest is the Javascript test framework we used in our test. 
   * We using Jest to test our Redux code which includes actions and reducers. 
   * In detail, we test the ChRIS API in actions and reducers in order to make sure that ChRIS API works properly.
 - Apache JMeter   
