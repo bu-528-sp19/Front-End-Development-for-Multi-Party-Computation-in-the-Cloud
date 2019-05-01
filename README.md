@@ -133,13 +133,13 @@ We use Apache JMeter to test our ChRIS store which is deployed in MOC related to
 Minimum Viable Product:
 - Update the Chris-store UI by replacing the Undux with Redux.
 - Design an efficient front-end interface of Chris to interact between users and cloud server by using Redux. 
-- Using Jest to 
-- Deploy ChRIS store frontend to MOC using Openshift and scale test in the MOC.
+- Using Jest to test Redux action and reducer which related to ChRIS API.
+- Deploy ChRIS store frontend to MOC using Openshift.
 
 Potential stretch goals:  
 - Deploy the ChRIS Store backend to MOC.
-- Implement Apache JMeter to track the website traffic and do some scale test.
-- Compares ChRIS store performance with different numbers of plugins which are in the backend.
+- Implement Apache JMeter to track the website traffic and do some pressure test.
+- Compared ChRIS store performance by adding different numbers of plugins.
 
 
 ### 6. Release Planning
