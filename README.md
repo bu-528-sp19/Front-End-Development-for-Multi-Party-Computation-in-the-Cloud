@@ -95,11 +95,11 @@ The front-end will not deliver:
 
 ### ChRIS Detail Diagram:
 
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/ChRIS%20Diagram.jpeg">
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/CHRIS.jpg">
 
 This diagram gives a brief overview of the ChRIS platform.
 * While ChRIS processing tasks, the input data and plugins are retrieved by ChRIS platform from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
-* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux, test ChRIS APIs in Redux.
+* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux and test ChRIS APIs in Redux.
 * Then we will deploy ChRIS store backend and frontend in MOC using Openshift.
 * The ChRIS Store is an autonomous unit includes both front-end and back-end. 
 * More work needed to be added... 
