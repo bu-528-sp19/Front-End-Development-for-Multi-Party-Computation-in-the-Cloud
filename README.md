@@ -95,7 +95,7 @@ The front-end will not deliver:
 
 ### ChRIS Detail Diagram:
 
-<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/CHRIS.jpg" height = "400" width = "700"><div>
+<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/CHRIS.jpg" height = "400" width = "700"></div>
 
 This diagram gives a brief overview of the ChRIS platform.
 * While ChRIS processing tasks, the input data and plugins are retrieved by ChRIS platform from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
@@ -148,18 +148,18 @@ Potential stretch goals:
 - Compared ChRIS store performance by adding different numbers of plugins.
 
 ### 6. Workflow of our project
-<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow1.jpg" height = "400" width = "700"><div>
+<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow1.jpg" height = "400" width = "700"></div>
 
-- What we did about ChRIS store is that:
-  * Rewrite ChRIS store using React and Redux
-  * Deploy into MOC using Openshift
-  * Conduct pressure test using Apache JMeter
+What we did about ChRIS store is that:
+- Rewrite ChRIS store using React and Redux
+- Deploy into MOC using Openshift
+- Conduct pressure test using Apache JMeter
 
-<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow2.jpg" height = "400" width = "700"><div>
+<div align = center><img src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow2.jpg" height = "400" width = "700"></div>
 
-- What we did in about ChRIS is that:
-  * Create declaration files for 33 ChRIS APIs
-  * Conduct API test in Redux
+What we did in about ChRIS is that:
+- Create declaration files for 33 ChRIS APIs
+- Conduct API test in Redux
 
 ### 7. Release Planning
 
