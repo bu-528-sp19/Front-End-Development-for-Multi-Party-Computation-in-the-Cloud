@@ -57,7 +57,11 @@ $ npm start
     
 ### 1. Vision and Goals
 
-The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).  
+The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).   
+ChRIS platform is:  
+- Open source
+- A medical image processing platform
+- Deployed on the Massachusetts Open Cloud (MOC)  
 Our goal is to: 
 - Design a front-end interface using React & Redux.
 - Conduct unit test about ChRIS Javascript API.
