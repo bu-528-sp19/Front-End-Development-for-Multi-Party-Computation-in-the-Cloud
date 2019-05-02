@@ -57,8 +57,8 @@ $ npm start
     
 ### 1. Vision and Goals
 
-The project is part of the front end of ChRIS platform which have a team group of nealy 200 people(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).   
-ChRIS platform is:  
+The project is part of the front end of ChRIS platform which have a team group of nealy 200 people(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).  
+ChRIS platform is:
 - Open source
 - A medical image processing platform
 - Deployed on the Massachusetts Open Cloud (MOC)  
@@ -167,9 +167,6 @@ What we did in about ChRIS is that:
 - Conduct API test in Redux
 
 ### 7. Release Planning
-
-Until February 6 2019, the MPC API hasn't been implemented yet. Based on the schedule, the MPC API can be released after we finished the ChRIS Store rewriting and front-end of ChRIS platform. The data visualization is an important part of user experience, we want to show something pleasant the user can view from the results of the algorithm. 
-
 - Sprint 1(weeks 1&3): Get familiar with project technology, including React, Patternfly, Redux, Undux and so on. And have a basic understanding of the ChRIS platform and ChRIS UI project of Redhat. Practice how to implement Redux by updating the Chris-store UI by using Redux. 
 
 - Sprint 2(weeks 4&6): Start implementing redux for the ChRIS UI, create a definition file of Typescript for ChRIS API, start to test the backend of ChRIS UI and take all backend objects and populate them into the cache and make them available.
@@ -179,7 +176,6 @@ Until February 6 2019, the MPC API hasn't been implemented yet. Based on the sch
 - Sprint 4(weeks 9&10): Deploy the ChRIS Store on the MOC using Openshift and incorporate testing to validate functionality.
 
 - Sprint 5(from week11): Deploy the backend of ChRIS Store and track and test the website traffic using Apache JMeter.
-
 
 #### Reference
 - [1] Duffy, Máirín. ChRIS UI Design Brief. RedHat, 20 Nov. 2018.
