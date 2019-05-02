@@ -30,7 +30,7 @@ $ npm start
 ```
 - You can now access the ChRIS Store frontend in http://localhost:3000/
 
-### Deploy ChRIS backend
+### Deploy ChRIS Store backend
 - To deploy the backend of ChRIS Store, Login to the MOC Openshift Dashboard.
 - Create a Node.js project.
 - Choose the project you want to add and give a name to the application.
@@ -60,8 +60,9 @@ $ npm start
 The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).  
 Our goal is to: 
 - Design a front-end interface using React & Redux.
+- Conduct unit test about ChRIS Javascript API.
 - Deploy ChRIS store backend and frontend to MOC using Openshift.
-- Receive the input from the user and send the input to MOC for computation and show visualized result for the users.
+- Explore the performance of ChRIS store website in MOC.
 
 ### 2. Users/Personas Of The Project
 Basically, the target users are:  
@@ -98,8 +99,9 @@ The front-end will not deliver:
 
 This diagram gives a brief overview of the ChRIS platform.
 * While ChRIS processing tasks, the input data and plugins are retrieved by ChRIS platform from a data source and a plugin store respectively and then pushed to a cloud-based computing environment. Once the computation is finished, the output of the image processing plugin is retrieved back into ChRIS.
-* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux. Then we will get data from the MPC depicted on the right side through the ChRIS backend to the ChRIS front end to display the output.
-* The ChRIS Store is an autonomous unit includes both front-end and back-end. ChRIS store 
+* Our main work is related to the ChRIS(the green square below store) frontend, which we are going to rewrite with React and Redux, test ChRIS APIs in Redux.
+* Then we will deploy ChRIS store backend and frontend in MOC using Openshift.
+* The ChRIS Store is an autonomous unit includes both front-end and back-end. 
 * More work needed to be added... 
 
 ### Design Implications and Discussion
