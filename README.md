@@ -148,14 +148,14 @@ Potential stretch goals:
 - Compared ChRIS store performance by adding different numbers of plugins.
 
 ### 6. Workflow of our project
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow1.jpg">
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow1.jpg" height = "400" width = "700">
 
 What we did about ChRIS store is that:
 - Rewrite ChRIS store using React and Redux
 - Deploy into MOC using Openshift
 - Conduct pressure test using Apache JMeter
 
-<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow2.jpg">
+<img align = center src = "https://github.com/bu-528-sp19/Front-End-Development-for-Multi-Party-Computation-in-the-Cloud/blob/master/images/workflow2.jpg" height = "400" width = "700">
 
 What we did in about ChRIS is that:
 - Create declaration files for 33 ChRIS APIs
