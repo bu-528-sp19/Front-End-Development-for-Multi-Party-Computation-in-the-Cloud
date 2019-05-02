@@ -34,7 +34,7 @@ $ npm start
 - To deploy the backend of ChRIS Store, Login to the MOC Openshift Dashboard.
 - Create a Node.js project.
 - Choose the project you want to add and give a name to the application.
-- For the Git Repository, input `https://github.com/FNNDSC/ChRIS_ui.git`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
+- For the Git Repository, input `https://github.com/FNNDSC/ChRIS_ultron_backEnd`, the backend will be deployed to Openshift automatically using [S2I](https://blog.openshift.com/multiple-deployment-methods-openshift/) method.
 
 ## Project Code
 - Our code are pulled to the ChRIS main branch directly, to see the code:
@@ -57,14 +57,15 @@ $ npm start
     
 ### 1. Vision and Goals
 
-The project is part of the front end of ChRIS platform(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).   
+The project is part of the front end of ChRIS platform which have a team group of nealy 200 people(ChRIS Research Integration System, which is a web-based medical image platform that allows for various forms of medical image processing(Ex: MRIs).   
 ChRIS platform is:  
 - Open source
 - A medical image processing platform
 - Deployed on the Massachusetts Open Cloud (MOC)  
+
 Our goal is to: 
 - Design a front-end interface using React & Redux.
-- Conduct unit test about ChRIS Javascript API.
+- Conduct unit test about ChRIS API.
 - Deploy ChRIS store backend and frontend to MOC using Openshift.
 - Explore the performance of ChRIS store website in MOC.
 
