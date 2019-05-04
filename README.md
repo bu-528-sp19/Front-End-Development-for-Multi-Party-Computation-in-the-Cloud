@@ -55,7 +55,7 @@ $ npm start
     
 ## Project Introduction
 
-    The video introduction of the project, please go to: https://youtu.be/olcPfxgkgTI
+The video introduction of the project, please go to: https://youtu.be/olcPfxgkgTI
     
 ### 1. Vision and Goals
 
