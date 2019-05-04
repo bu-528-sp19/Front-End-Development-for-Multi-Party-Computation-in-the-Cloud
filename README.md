@@ -54,6 +54,8 @@ $ npm start
     - The deployed webpage is [here](http://chris-store-dev-chrisstorebackend.k-apps.osh.massopen.cloud/api/v1/)(Please use Safari, FireFox or Edge to access the webpage, the website doesn't support Chrome)
     
 ## Project Introduction
+
+    The video introduction of the project, please go to: https://youtu.be/olcPfxgkgTI
     
 ### 1. Vision and Goals
 
